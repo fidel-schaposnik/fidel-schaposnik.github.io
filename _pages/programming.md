@@ -2,7 +2,7 @@
 layout: page
 permalink: /programming/
 title: programming
-description: Various resources on my programming experience.
+description:
 nav: true
 ---
 
@@ -12,13 +12,13 @@ This page contains various links and resources related to programming. Let me kn
 
 ## Competitive programming
 
-I started participating in the _ACM International Collegiate Programming Contest_ (ICPC) in 2006, as a member of team "La JiRaFa" along with Joaquin Rodrigues Jacinto and Ramiro Lafuente. We qualified to the ACM--ICPC World Finals twice, in 2009 (Stockholm) and 2010 (Harbin). I've also ocassionally participated in [CodeForces](https://codeforces.com/profile/fidels), TopCoder, CodeJam, HackerCup, and other individual programming competitions.
+I started participating in the _ACM International Collegiate Programming Contest_ ([ICPC](https://icpc.global/)) in 2006, as a member of team "La JiRaFa" along with [Joaquin Rodrigues Jacinto](https://sites.google.com/site/joaquinrj/home) and [Ramiro Lafuente](https://sites.google.com/view/ramlaf/home). We qualified to the ACM--ICPC World Finals twice, in 2009 (Stockholm) and 2010 (Harbin). I've also ocassionally participated in [CodeForces](https://codeforces.com/profile/fidels), [TopCoder](https://www.topcoder.com/members/fidels), CodeJam, HackerCup, and other individual programming competitions.
 
-After retiring as a contestant, I moved on to problem-setting and jury duties both at the Argentinian and Latin-American regional level of ACM--ICPC. I am (slowly) adding some of the problems and solutions I used to practice, as well as problems I wrote myself, to [this repository](https://github.com/fidel-schaposnik/icpc-solutions). 
+After retiring as a contestant, I moved on to problem-setting and jury duties both at the [Argentinian](http://torneoprogramacion.com.ar/) and Latin-American regional level of ACM--ICPC. I am (slowly) adding some of the problems and solutions I used to practice, as well as problems I wrote myself, to [this repository](https://github.com/fidel-schaposnik/icpc-solutions). You can find some of my lectures on various topics in competitive programming in my [teaching](/teaching/) page.
 
 ## Mathematica problems
 
-In 2019 I prepared some problems aiming to introduce Mathematica and improve the coding skills of people with a physics background but not necessarily experienced in functional programming. While the language has changed significantly 
+In 2019 I prepared some problems aiming to introduce Mathematica and improve the coding skills of people with a Physics background but not necessarily experienced in functional programming. While the Wolfram language has changed significantly since then, you may still find something useful in the following:
 
 1. [Mathematica basics](/assets/pdf/1%20-%20Basics.pdf) ([solution](/assets/other/1%20-%20Basics.nb))
 2. [Ladder operators for the anharmonic oscillator](/assets/pdf/2%20-%20Ladder%20Operators.pdf) ([solution](/assets/other/2%20-%20Ladder%20Operators.nb))
