@@ -14,7 +14,8 @@ This page contains various links and resources related to programming. Let me kn
 
 I started participating in the _ACM International Collegiate Programming Contest_ ([ICPC](https://icpc.global/)) in 2006, as a member of team "La JiRaFa" along with [Joaquin Rodrigues Jacinto](https://sites.google.com/site/joaquinrj/home) and [Ramiro Lafuente](https://sites.google.com/view/ramlaf/home). We qualified to the ACM--ICPC World Finals twice, in 2009 (Stockholm) and 2010 (Harbin). I've also ocassionally participated in [CodeForces](https://codeforces.com/profile/fidels), [TopCoder](https://www.topcoder.com/members/fidels), CodeJam, HackerCup, and other individual programming competitions. After retiring as a contestant, I moved on to problem-setting and jury duties both at the [Argentinian](http://torneoprogramacion.com.ar/) and Latin-American regional level of ACM--ICPC.
 
-I am (slowly) adding some of the problems and solutions I used to practice, as well as problems I wrote myself, to [this repository](https://github.com/fidel-schaposnik/icpc-solutions). You can find some of my lectures on various topics in competitive programming in my [teaching](/teaching/) page.
+- I am (slowly) adding some of the problems and solutions I used to practice, as well as problems I wrote myself, to [this repository](https://github.com/fidel-schaposnik/icpc-solutions).
+- You can find some of my lectures on various topics in competitive programming in my [teaching](/teaching/) page.
 
 ## Mathematica problems
 
