@@ -6,7 +6,7 @@ description:
 nav: true
 ---
 
-I started programming in the early 2000's when I discovered then-little-known Python 1.6 through a family friend, and have been coding ever since -- my SourceForge account is now old enough to drink! My preferred languages are Python for machine-learning and artificial intelligence, as well as day-to-day automation; C++ for competitive programming; and Mathematica for symbolic computations and Physics projects.
+I began programming in the early 2000's when I discovered then-little-known Python 1.6 through a family friend, and have been coding ever since -- my SourceForge account is now old enough to drink! My preferred languages are Python for machine-learning and artificial intelligence, as well as day-to-day automation; C++ for competitive programming; and Mathematica for symbolic computations and Physics projects.
 
 This page contains various links and resources related to programming. Let me know if you have any questions or comments, or if you find any bugs, errors or broken links.
 
