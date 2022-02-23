@@ -1,0 +1,12 @@
+---
+layout: page
+permalink: /cv/
+title: curriculum vitae
+description:
+nav: false
+---
+
+If the embedded version below does not work, you can download a copy <a href='/assets/pdf/FidelSchaposnikMassolo_CV.pdf'>here</a>.
+<object data="/assets/pdf/FidelSchaposnikMassolo_CV.pdf#view=FitH&pagemode=none" type="application/pdf" style="width:100%;height:100vh">
+	<embed src="/assets/pdf/FidelSchaposnikMassolo_CV.pdf#view=FitH&pagemode=none" type="application/pdf" />
+</object>
