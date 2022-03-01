@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle:
+subtitle: <tt>fidels (at) ihes (dot) fr<\tt>
 
 profile:
   align: right
