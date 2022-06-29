@@ -27,7 +27,7 @@ function filterNames() {
   }
 }
 
-var preCode = '<pre><code class="language-c++">';
+var preCode = '<pre class="code"><code class="language-c++">';
 var postCode = '</code></pre>';
 
 String.prototype.toHtmlEntities = function() {
