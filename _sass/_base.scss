@@ -277,6 +277,18 @@ footer.sticky-bottom {
 
 // Blog
 
+.section.separator {
+  min-height: 20px;
+}
+
+.subsection.separator {
+  min-height: 10px;
+}
+
+.text.separator {
+  min-height: 5px;
+}
+
 .header-bar {
   border-bottom: 1px solid var(--global-divider-color);
   text-align: center;
@@ -393,6 +405,118 @@ footer.sticky-bottom {
   }
 }
 
+// Problems
+.problems {
+  .btn {
+	color: var(--global-text-color);
+	border: 1px solid var(--global-text-color);
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	&:hover {
+	  color: var(--global-theme-color);
+	  border-color: var(--global-theme-color);
+	}
+  }
+  .problemEntry {
+    a.code.btn {
+      color: var(--global-text-color);
+      &:hover {
+        color: var(--global-theme-color);
+        border-color: var(--global-theme-color);
+      }
+    }
+    .row.code {
+      justify-content: center;
+    }
+    pre {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  }
+  .hidden {
+        font-size: 0.875rem;
+        max-height: 0px;
+        overflow: hidden;
+        text-align: justify;
+        transition-property: 0.15s ease;
+        -moz-transition: 0.15s ease;
+        -ms-transition: 0.15s ease;
+        -o-transition: 0.15s ease;
+        transition: all 0.15s ease;
+
+        p {
+          line-height: 1.4em;
+          margin: 10px;
+        }
+        pre {
+          background-color: var(--global-code-bg-color);
+          font-size: 1em;
+          line-height: 1.4em;
+          padding: 10px;
+        }
+      }
+      .hidden.open {
+        max-height: 50em;
+        transition: all 0.15s ease;
+        overflow-y: scroll;
+      }
+      div.code.hidden {
+        border: dashed 1px var(--global-bg-color);
+        margin: 0px;
+      }
+      div.code.hidden.open {
+        border-color: var(--global-text-color);
+        width: 95%;
+        margin: 10px;
+      }
+}
+
+
+// Mathematica problems
+.mathematica_problems {
+  .problemEntry {
+    .title {
+      font-weight: 400;
+    }
+    .btn {
+    color: var(--global-text-color);
+    border: 1px solid var(--global-text-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    &:hover {
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+    }
+    }
+    a.statement.btn {
+      color: var(--global-text-color);
+      padding-left: 1rem;
+      padding-right: 1rem;
+      &:hover {
+        color: var(--global-theme-color);
+        border-color: var(--global-theme-color);
+      }
+    }
+    .row.statement {
+      justify-content: center;
+    }
+    .statement.hidden {
+      max-height: 0px;
+      overflow: hidden;
+      width: 95%;
+    }
+    .statement.hidden.open {
+      max-height: 50em;
+      transition: all 0.25s ease;
+      border: dashed 1px var(--global-text-color);
+      padding: 10px;
+    }
+  }
+}
 
 // Publications
 
@@ -520,9 +644,15 @@ figure.highlight {
   margin: 0 0 1rem;
 }
 
+pre.output {
+  color: var(--global-text-color-light);
+  background-color: var(--global-bg-color);
+}
+
 pre {
   color: var(--global-theme-color);
   background-color: var(--global-code-bg-color);
+  border: 1px dashed;
   border-radius: 6px;
   padding: 6px 12px;
   pre, code {
