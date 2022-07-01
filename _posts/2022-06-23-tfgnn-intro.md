@@ -12,6 +12,8 @@ For my first post in this blog, I've decided to write a beginner-level introduct
 An interactive version of this post, where you can run and modify the code, is available as a [Kaggle notebook](https://www.kaggle.com/code/fidels/introduction-to-tf-gnn) and also on [GoogleColab](https://colab.research.google.com/drive/1FQPBpdrd17WzX_rcFAMsIaN8EK0rP4Ai?usp=sharing). 
 Please let me know if you find any bugs or errors, and also if you thought this was useful or you'd like more details about some particular point.
 
+**[July 1, 2022 UPDATE]** The [Kaggle notebook](https://www.kaggle.com/code/fidels/introduction-to-tf-gnn) version of this post has been awarded the [Google Open Source Expert Prize](https://www.kaggle.com/google-oss-expert-prize) for the month of July.
+
 ## <a id="contents">Contents</a>
 
 - [1. Introduction](#introduction)
