@@ -14,6 +14,8 @@ Please let me know if you find any bugs or errors, and also if you thought this 
 
 **[July 1, 2022 UPDATE]** The [Kaggle notebook](https://www.kaggle.com/code/fidels/introduction-to-tf-gnn) version of this post has been awarded the [Google Open Source Expert Prize](https://www.kaggle.com/google-oss-expert-prize) for the month of July.
 
+**[July 5, 2022 UPDATE]** I've now updated this notebook to work with the latest TF-GNN release, v0.2.0; some typos were also corrected, and more resources have been added to [§5.1](#conclusions_resources).
+
 ## <a id="contents">Contents</a>
 
 - [1. Introduction](#introduction)
@@ -46,7 +48,7 @@ Please let me know if you find any bugs or errors, and also if you thought this 
 
 <div class="text separator"></div>
 
-A _[graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics))_ consists of a collection $$\mathcal{V}=\{1,\dots,n\}$$ of _nodes_, sometimes also called _vertices_, and a set of _edges_ $$\mathcal{E} \subseteq \mathcal{V} \times \mathcal{V}$$. An edge $$(i,j) \in \mathcal{E}$$, also denoted $$i\to j$$, represents a relation from node $$i$$ to node $$j$$ which in the general case is directed (_i.e._ does not necessarily imply the relation $$j\to i$$). _Heterogeneous_ graphs can have different types of nodes and/or edges, and _decorated_ graphs may have features associated to their nodes, $$h_i \in \mathbb{R}^{d_\mathcal{V}}$$ for $$i=1,\dots,n$$, and/or their edges, $$h_{i\to j} \in \mathbb{R}^{d_\mathcal{E}}$$ for $$(i,j)\in\mathcal{E}$$.
+A _[graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics))_ consists of a collection $$\mathcal{V}=\{1,\dots,n\}$$ of _nodes_, sometimes also called _vertices_, and a set of _edges_ $$\mathcal{E} \subseteq \mathcal{V} \times \mathcal{V}$$. An edge $$(i,j) \in \mathcal{E}$$, also denoted $$i\to j$$, represents a relation from node $$i$$ to node $$j$$ which in the general case is directed (_i.e._ does not necessarily imply the converse relation $$j\to i$$). _Heterogeneous_ graphs can have different types of nodes and/or edges, and _decorated_ graphs may have features associated to their nodes, $$h_i \in \mathbb{R}^{d_\mathcal{V}}$$ for $$i=1,\dots,n$$, and/or their edges, $$h_{i\to j} \in \mathbb{R}^{d_\mathcal{E}}$$ for $$(i,j)\in\mathcal{E}$$.
 
 Graphs are clearly a very general and powerful concept, which can be used to represent many different kinds of data. For example:
 - A social network may be thought of as a graph where the nodes correspond to different users, and the edges correspond to their relationships (_i.e._ "friendship", "follower", etc).
@@ -63,7 +65,7 @@ where $$f_{\theta_\mathcal{V}}$$ is a neural network applied at each node with p
 
 ### <a id="introduction_tfgnn">1.2 TensorFlow GNN</a>
 
-[TensorFlow GNN (TF-GNN)](https://github.com/tensorflow/gnn) is a fairly recent addition to the TensorFlow ecosystem, having been first released in late 2021. At this time there are relatively few resources available explaining how to use TF-GNN in practice; this notebook attempts to start filling the gap by providing a basic example of the application of TF-GNN to a real-world problem, namely the classification of molecules to detect cardiotoxicity.
+[TensorFlow GNN (TF-GNN)](https://github.com/tensorflow/gnn) is a fairly recent addition to the TensorFlow ecosystem, having been first released in late 2021. At this time there are relatively few resources available explaining how to use TF-GNN in practice (see [§5.1](#conclusions_resources) for more); this notebook attempts to start filling the gap by providing a basic example of the application of TF-GNN to a real-world problem, namely the classification of molecules to detect cardiotoxicity.
 
 TF-GNN is very powerful and flexible, and can deal with large, heterogeneous graphs. We will however keep things simple here, and work instead with rather small, homogeneous graphs having few features. The main focus will be on showcasing the basic concepts and design abstractions introduced in TF-GNN to facilitate and accelerate end-to-end training of GNN models, particularly:
 
@@ -105,7 +107,7 @@ from IPython.display import clear_output
 !pip install tensorflow==2.8 tensorflow-io==0.25.0 tfds-nightly pygraphviz
 
 # Install TensorFlow-GNN
-!pip install tensorflow_gnn --pre
+!pip install tensorflow_gnn==0.2.0
 
 # Fix some dependencies
 !pip install httplib2==0.20.4
@@ -125,7 +127,7 @@ from IPython.display import clear_output
 !pip install tfds-nightly pygraphviz
 
 # Install TensorFlow-GNN
-!pip install tensorflow_gnn==0.2.0.dev1
+!pip install tensorflow_gnn==0.2.0
 
 clear_output()
 {% endhighlight %}
@@ -139,16 +141,19 @@ from IPython.display import Image
 
 import tensorflow as tf
 tf.get_logger().setLevel('ERROR')
-print(f'Using TensorFlow v{tf.__version__} on {tf.config.list_physical_devices("GPU")}')
 
 import tensorflow_gnn as tfgnn
 import tensorflow_datasets as tfds
 
 from tensorflow_gnn import runner
 from tensorflow_gnn.models import gat_v2, gnn_template
+
+print(f'Using TensorFlow v{tf.__version__} and TensorFlow-GNN v{tfgnn.__version__}')
+print(f'GPUs available: {tf.config.list_physical_devices("GPU")}')
 {% endhighlight %}
 <pre class="output">
-Using TensorFlow v2.8.0 on [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Using TensorFlow v2.8.0 and TensorFlow-GNN v0.2.0
+GPUs available: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
 </pre>
 
 <div class="section separator"></div>
@@ -610,7 +615,7 @@ array([[1., 0., 0., 0., 1., 1., 1., 1., 1., 1., 1., 0.],
        [0., 1., 0., 0., 1., 1., 1., 1., 1., 1., 1., 0.]], dtype=float32)>
 </pre>
 
-The ids of the edge endpoints are then stored in a couple of tensors of shape `[ E, ]`
+The ids of the edge endpoints are then stored in a couple of tensors of shape `(E,)`
 
 {% highlight python %}
 graph_tensor.edge_sets['bond'].adjacency.source
@@ -750,7 +755,7 @@ We should note, however, that once more the [orchestrator](https://github.com/te
 
 ## <a id="mpnn">3. Vanilla MPNN models</a>
 
-A [common architecture for GNNs](https://github.com/tensorflow/gnn/blob/main/tensorflow_gnn/docs/guide/gnn_modeling.md) consists of an initial layer which preprocesses the graph features, typically producing hidden states for nodes and/or edges, which is followed by one or more layers of message passing working as described in the [Introduction](#introduction). TF-GNN provides a convenient `vanilla_mpnn_model` helper method in its [`models.gnn_template` module](https://github.com/tensorflow/gnn/tree/main/tensorflow_gnn/models/gnn_template), which can be used to create such simple GNNs from:
+A [common architecture for GNNs](https://github.com/tensorflow/gnn/blob/main/tensorflow_gnn/docs/guide/gnn_modeling.md) consists of an initial layer which preprocesses the graph features, typically producing hidden states for nodes and/or edges, which is followed by one or more layers of message-passing working as described in the [Introduction](#introduction). The goal of this section is to define a `vanilla_mpnn_model` function which can be used to create such simple GNNs from:
 
 - an initial layer performing the pre-processing
 - a layer stacking multiple message-passing layers
@@ -924,12 +929,23 @@ array([[0.        , 0.        , 0.        , ..., 0.        , 0.        ,
 
 ### <a id="mpnn_construction">3.3 Model construction</a>
 
-We are now ready to combine both ingredients into a `tf.keras.Model` that takes a `GraphTensor` representing a molecule as input, and produces as its output another `GraphTensor` with hidden states for all the atoms. As mentioned before, this is most easily done with the help of the `vanilla_mpnn_model` function:
+We are now ready to combine both ingredients into a `tf.keras.Model` that takes a `GraphTensor` representing a molecule as input, and produces as its output another `GraphTensor` with hidden states for all the atoms. We use Keras' functional API to define a `vanilla_mpnn_model` helper function returning the desired `tf.keras.Model`:
 
 {% highlight python %}
-model = gnn_template.vanilla_mpnn_model(graph_tensor_spec=graph_spec,
-                                        init_states_fn=graph_embedding,
-                                        pass_messages_fn=mpnn)
+def vanilla_mpnn_model(graph_tensor_spec, init_states_fn, pass_messages_fn):
+    """
+    Chain an initialization layer and a message-passing stack to produce a `tf.keras.Model`.
+    """
+    graph_tensor = tf.keras.layers.Input(type_spec=graph_tensor_spec)
+    embedded_graph = init_states_fn(graph_tensor)
+    hidden_graph = pass_messages_fn(embedded_graph)
+    return tf.keras.Model(inputs=graph_tensor, outputs=hidden_graph)
+{% endhighlight %}
+
+{% highlight python %}
+model = vanilla_mpnn_model(graph_tensor_spec=graph_spec,
+                           init_states_fn=graph_embedding,
+                           pass_messages_fn=mpnn)
 model.summary()
 {% endhighlight %}
 <pre class="output">
@@ -951,7 +967,7 @@ Non-trainable params: 0
 _________________________________________________________________
 </pre>
 
-For later convenience, let us encapsulate all of this logic in a function we can use to get model constructors for fixed hyperparameters. The returned constructor by convention takes only the `GraphTensorSpec` of the input graphs for the model, and for good measure our constructor will also add some $L_2$ regularization through an `l2_coefficient` hyperparameter:
+For later convenience, let us encapsulate all of this logic in a function we can use to get model constructors for fixed hyperparameters. The returned constructor by convention takes only the `GraphTensorSpec` of the input graphs for the model, and for good measure our constructor will also add some $$L_2$$ regularization through an `l2_coefficient` hyperparameter:
 
 {% highlight python %}
 def get_model_creation_fn(hidden_size, hops, activation='relu', l2_coefficient=1e-3):
@@ -962,9 +978,9 @@ def get_model_creation_fn(hidden_size, hops, activation='relu', l2_coefficient=1
         initial_map_features = get_initial_map_features(hidden_size=hidden_size, activation=activation)
         mpnn = MPNN(hidden_size=hidden_size, hops=hops)
         
-        model = gnn_template.vanilla_mpnn_model(graph_tensor_spec=graph_tensor_spec,
-                                                init_states_fn=initial_map_features,
-                                                pass_messages_fn=mpnn)
+        model = vanilla_mpnn_model(graph_tensor_spec=graph_tensor_spec,
+                                   init_states_fn=initial_map_features,
+                                   pass_messages_fn=mpnn)
         model.add_loss(lambda: tf.reduce_sum([tf.keras.regularizers.l2(l2=l2_coefficient)(weight) for weight in model.trainable_weights]))
         return model
     return model_creation_fn
@@ -1171,7 +1187,7 @@ We are now ready to train the model. First, we create a `KerasTrainer` instance 
 trainer = runner.KerasTrainer(strategy=tf.distribute.get_strategy(), model_dir='model')
 {% endhighlight %}
 
-Next, we define a simple function conforming to [the `GraphTensorProcessorFn` protocol](https://github.com/tensorflow/gnn/blob/main/tensorflow_gnn/docs/guide/runner.md#graphtensor-processing), which extracts the labels from the `GraphTensor` objects, for use during supervised training (this function will be mapped over the datasets that are then pass to the `tf.keras.Model.fit` method):
+Next, we define a simple function conforming to [the `GraphTensorProcessorFn` protocol](https://github.com/tensorflow/gnn/blob/main/tensorflow_gnn/docs/guide/runner.md#graphtensor-processing), which extracts the labels from the `GraphTensor` objects, for use during supervised training (this function will be mapped over the datasets that are then passed on to the `tf.keras.Model.fit` method):
 
 {% highlight python %}
 def extract_labels(graph_tensor):
@@ -1390,7 +1406,7 @@ The reader is encouraged to try various modifications of the GNN architecture to
 
 ### <a id="conclusions_resources">5.1 Resources and acknowledgements</a>
 
-There are a number of resources that have inspired or been used in this notebook, some of which are cited all along the way. They are also collected here for reference purposes:
+There are a number of resources that have inspired or been used in this notebook, some of which are cited along the way. They are also collected here for reference purposes:
 
 - The paper [[1]](#cardiotox) introducing the CardioTox dataset digs deeper in the data we have used, and builds better classification models for it
 
@@ -1398,6 +1414,8 @@ There are a number of resources that have inspired or been used in this notebook
 
 - [A Gentle Introduction to Graph Neural Networks](https://distill.pub/2021/gnn-intro/) is a good reference to start learning more about GNNs and their applications
 
-- For those looking to dig deeper into GNNs, the book [Graph Representation Learning Book](https://www.cs.mcgill.ca/~wlh/grl_book/) by W. L. Hamilton is fairly up-to-date and more comprehensive
+- For those looking to dig deeper into GNNs, the [Graph Representation Learning Book](https://www.cs.mcgill.ca/~wlh/grl_book/) by W. L. Hamilton is fairly up-to-date and more comprehensive
 
 - The [TensorFlow GNN guide](https://github.com/tensorflow/gnn/blob/main/tensorflow_gnn/docs/guide/intro.md) is a good place to start learning how to use TF-GNN, and some of this notebook's code was inspired by the examples provided there
+
+- **[July 5, 2022 UPDATE]** Some official notebooks with TF-GNN examples are now available, see _e.g._ [Molecular Graph Classification](https://colab.research.google.com/github/tensorflow/gnn/blob/master/examples/notebooks/intro_mutag_example.ipynb), [Solving OGBN-MAG end-to-end](https://colab.research.google.com/github/tensorflow/gnn/blob/master/examples/notebooks/ogbn_mag_e2e.ipynb#scrollTo=udvGTpefWRE_) and [Learning shortest paths with GraphNetworks](https://colab.research.google.com/github/tensorflow/gnn/blob/master/examples/notebooks/graph_network_shortest_path.ipynb)
