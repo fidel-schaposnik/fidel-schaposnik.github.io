@@ -1,0 +1,2726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>        
+    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fidel I. Schaposnik Massolo | competitive programming</title>
+    <meta name="author" content="Fidel I. Schaposnik Massolo" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+    <!-- Favicon.io -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+	<!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://fidel-schaposnik.github.io/competitive_programming/">
+
+    <!-- Dark Mode -->
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2JDVD6KLP2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-2JDVD6KLP2');
+  </script>
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="https://fidel-schaposnik.github.io/"><span class="font-weight-bold">Fidel I.</span> Schaposnik Massolo</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <!--<li class="nav-item ">
+                <a class="nav-link" href="/">about</a>
+              </li>-->
+              
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">publications</a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">programming</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/competitive_programming/">competitive programming</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/mathematica/">mathematica</a>
+                </div>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/teaching/">teaching</a>
+              </li>
+              <!-- Blog -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/blog/">blog</a>
+              </li>
+              <!-- Toogle theme mode -->
+              <div class="toggle-container">
+                <a id="light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <!-- page.html -->
+        <div class="post">
+
+          <header class="post-header">
+            <h1 class="post-title">competitive programming</h1>
+            <p class="post-description"></p>
+          </header>
+
+          <article>
+            <script>
+function filterNames() {
+  var textFilter = document.getElementById("textFilter");
+  var filter = textFilter.value.toUpperCase();
+  var problemList = document.getElementById("problemList");
+  rows = problemList.getElementsByClassName("problemEntry");
+
+  // Loop through all table rows, and hide those which don't match the search query
+  for (i = 0; i < rows.length; i++) {
+    problemName = rows[i].getElementsByClassName("problemData")[0];
+    if (problemName) {
+      txtValue = problemName.textContent || problemName.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        rows[i].style.display = "";
+      } else {
+        rows[i].style.display = "none";
+      }
+    }
+  }
+}
+
+var preCode = '<pre class="code"><code class="language-c++">';
+var postCode = '</code></pre>';
+
+String.prototype.toHtmlEntities = function() {
+    return this.replace(/./gm, function(s) {
+        // return "&#" + s.charCodeAt(0) + ";";
+        return (s.match(/[a-z0-9\s]+/i)) ? s : "&#" + s.charCodeAt(0) + ";";
+    });
+};
+
+function toggleCode(elementId, code_path) {
+  var codeBlock = document.getElementById(elementId);
+  var innerHTML = codeBlock.innerHTML;
+  if (innerHTML == "") {
+	fetch('https://api.github.com/repos/fidel-schaposnik/icpc-solutions/contents/'+code_path)
+		.then(response => response.json())
+		.then( data => codeBlock.innerHTML = preCode+atob(data['content']).toHtmlEntities()+postCode);
+  }
+  codeBlock.toggleClass('open');
+}
+</script>
+
+<p>I started participating in the <em>ACM International Collegiate Programming Contest</em> (<a href="https://icpc.global/" target="_blank" rel="noopener noreferrer">ICPC</a>) in 2006, as a member of team “La JiRaFa” along with <a href="https://sites.google.com/site/joaquinrj/home" target="_blank" rel="noopener noreferrer">Joaquin Rodrigues Jacinto</a> and <a href="https://sites.google.com/view/ramlaf/home" target="_blank" rel="noopener noreferrer">Ramiro Lafuente</a>. We qualified to the ACM–ICPC World Finals twice, in 2009 (Stockholm) and 2010 (Harbin). I’ve also ocassionally participated in <a href="https://codeforces.com/profile/fidels" target="_blank" rel="noopener noreferrer">CodeForces</a>, <a href="https://www.topcoder.com/members/fidels" target="_blank" rel="noopener noreferrer">TopCoder</a>, CodeJam, HackerCup, and other individual programming competitions.</p>
+
+<p>After retiring as a contestant, I moved on to problem-setting and jury duties both at the <a href="http://torneoprogramacion.com.ar/" target="_blank" rel="noopener noreferrer">Argentinian</a> and Latin-American regional level of ACM–ICPC. I’ve also taught intensive mini-courses on competitive programming at various Latin-American universities. You can find more details, as well as some of my lectures on various topics in competitive programming, in my <a href="/teaching/">teaching</a> page.</p>
+
+<p>I am (slowly) adding some of the problems and solutions I used to practice, as well as problems I wrote myself, to <a href="https://github.com/fidel-schaposnik/icpc-solutions" target="_blank" rel="noopener noreferrer">this repository</a>. The following is a list of all 146 problems currently in the database, with links to their statements and solutions. More problems, solutions and tags are added as time permits.</p>
+
+<p><input type="text" id="textFilter" onkeyup="filterNames()" placeholder="Search for problem names, tags..." style="width:100%;padding:10px;color:var(--global-text-color);background-color:var(--global-bg-color);"></p>
+
+<div id="problemList" class="problems">
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=2006" target="_blank" rel="noopener noreferrer">Most wanted word</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/2006%20-%20Most%20wanted%20word/2006%20-%20Most%20wanted%20word.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(2006, 'LiveArchive/2006%20-%20Most%20wanted%20word/2006%20-%20Most%20wanted%20word.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="2006" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=2008" target="_blank" rel="noopener noreferrer">Bouncy Balls</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/2008%20-%20Bouncy%20Balls/2008%20-%20Bouncy%20Balls.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(2008, 'LiveArchive/2008%20-%20Bouncy%20Balls/2008%20-%20Bouncy%20Balls.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="2008" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=2063" target="_blank" rel="noopener noreferrer">Colorville</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/2063%20-%20Colorville/2063%20-%20Colorville.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(2063, 'LiveArchive/2063%20-%20Colorville/2063%20-%20Colorville.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="2063" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=2068" target="_blank" rel="noopener noreferrer">PC^3</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/2068%20-%20PC%5E3/2068%20-%20PC%5E3.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(2068, 'LiveArchive/2068%20-%20PC%5E3/2068%20-%20PC%5E3.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="2068" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=2247" target="_blank" rel="noopener noreferrer">Prime Digital Roots</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/2247%20-%20Prime%20Digital%20Roots/2247%20-%20Prime%20Digital%20Roots.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(2247, 'LiveArchive/2247%20-%20Prime%20Digital%20Roots/2247%20-%20Prime%20Digital%20Roots.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="2247" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=2248" target="_blank" rel="noopener noreferrer">Desert Bitmap</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/2248%20-%20Desert%20Bitmap/2248%20-%20Desert%20Bitmap.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(2248, 'LiveArchive/2248%20-%20Desert%20Bitmap/2248%20-%20Desert%20Bitmap.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="2248" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=2250" target="_blank" rel="noopener noreferrer">Encryption Scheme</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/2250%20-%20Encryption%20Scheme/2250%20-%20Encryption%20Scheme.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(2250, 'LiveArchive/2250%20-%20Encryption%20Scheme/2250%20-%20Encryption%20Scheme.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="2250" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=2251" target="_blank" rel="noopener noreferrer">James Bond</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/2251%20-%20James%20Bond/2251%20-%20James%20Bond.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(2251, 'LiveArchive/2251%20-%20James%20Bond/2251%20-%20James%20Bond.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="2251" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=2282" target="_blank" rel="noopener noreferrer">P,MTHBGWB</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/2282%20-%20P,MTHBGWB/2282%20-%20P,MTHBGWB.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(2282, 'LiveArchive/2282%20-%20P,MTHBGWB/2282%20-%20P,MTHBGWB.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="2282" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=2289" target="_blank" rel="noopener noreferrer">Set Me</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/2289%20-%20Set%20Me/2289%20-%20Set%20Me.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(2289, 'LiveArchive/2289%20-%20Set%20Me/2289%20-%20Set%20Me.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="2289" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=2389" target="_blank" rel="noopener noreferrer">Palindrom Numbers</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/2389%20-%20Palindrom%20Numbers/2389%20-%20Palindrom%20Numbers.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(2389, 'LiveArchive/2389%20-%20Palindrom%20Numbers/2389%20-%20Palindrom%20Numbers.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="2389" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=2945" target="_blank" rel="noopener noreferrer">Help R2-D2!</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/2945%20-%20Help%20R2-D2!/2945%20-%20Help%20R2-D2!.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(2945, 'LiveArchive/2945%20-%20Help%20R2-D2!/2945%20-%20Help%20R2-D2!.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="2945" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=3003" target="_blank" rel="noopener noreferrer">Jelly</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/3003%20-%20Jelly/3003%20-%20Jelly.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(3003, 'LiveArchive/3003%20-%20Jelly/3003%20-%20Jelly.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="3003" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=3004" target="_blank" rel="noopener noreferrer">Change</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/3004%20-%20Change/3004%20-%20Change.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(3004, 'LiveArchive/3004%20-%20Change/3004%20-%20Change.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="3004" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=3005" target="_blank" rel="noopener noreferrer">Necklaces</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/3005%20-%20Necklaces/3005%20-%20Necklaces.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(3005, 'LiveArchive/3005%20-%20Necklaces/3005%20-%20Necklaces.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="3005" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=3006" target="_blank" rel="noopener noreferrer">Graphics</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/3006%20-%20Graphics/3006%20-%20Graphics.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(3006, 'LiveArchive/3006%20-%20Graphics/3006%20-%20Graphics.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="3006" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=3007" target="_blank" rel="noopener noreferrer">Shopping</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/3007%20-%20Shopping/3007%20-%20Shopping.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(3007, 'LiveArchive/3007%20-%20Shopping/3007%20-%20Shopping.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="3007" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=3153" target="_blank" rel="noopener noreferrer">Long Night of Museums</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">dynamic-programming</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/3153%20-%20Long%20Night%20of%20Museums/3153%20-%20Long%20Night%20of%20Museums.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(3153, 'LiveArchive/3153%20-%20Long%20Night%20of%20Museums/3153%20-%20Long%20Night%20of%20Museums.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="3153" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=3400" target="_blank" rel="noopener noreferrer">Book Replacement</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/3400%20-%20Book%20Replacement/3400%20-%20Book%20Replacement.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(3400, 'LiveArchive/3400%20-%20Book%20Replacement/3400%20-%20Book%20Replacement.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="3400" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=3401" target="_blank" rel="noopener noreferrer">Colored Cubes</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/3401%20-%20Colored%20Cubes/3401%20-%20Colored%20Cubes.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(3401, 'LiveArchive/3401%20-%20Colored%20Cubes/3401%20-%20Colored%20Cubes.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="3401" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=3403" target="_blank" rel="noopener noreferrer">Mobile Computing</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/3403%20-%20Mobile%20Computing/3403%20-%20Mobile%20Computing.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(3403, 'LiveArchive/3403%20-%20Mobile%20Computing/3403%20-%20Mobile%20Computing.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="3403" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=3404" target="_blank" rel="noopener noreferrer">Atomic Car Race</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/3404%20-%20Atomic%20Car%20Race/3404%20-%20Atomic%20Car%20Race.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(3404, 'LiveArchive/3404%20-%20Atomic%20Car%20Race/3404%20-%20Atomic%20Car%20Race.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="3404" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=3405" target="_blank" rel="noopener noreferrer">Network Mess</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/3405%20-%20Network%20Mess/3405%20-%20Network%20Mess.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(3405, 'LiveArchive/3405%20-%20Network%20Mess/3405%20-%20Network%20Mess.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="3405" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=3531" target="_blank" rel="noopener noreferrer">Word Rings</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/3531%20-%20Word%20Rings/3531%20-%20Word%20Rings.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(3531, 'LiveArchive/3531%20-%20Word%20Rings/3531%20-%20Word%20Rings.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="3531" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4011" target="_blank" rel="noopener noreferrer">Domino Art</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">max-flow</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4011%20-%20Domino%20Art/4011%20-%20Domino%20Art.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4011, 'LiveArchive/4011%20-%20Domino%20Art/4011%20-%20Domino%20Art.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4011" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4167" target="_blank" rel="noopener noreferrer">Parity</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4167%20-%20Parity/4167%20-%20Parity.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4167, 'LiveArchive/4167%20-%20Parity/4167%20-%20Parity.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4167" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4259" target="_blank" rel="noopener noreferrer">Dangerous Tunnels</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4259%20-%20Dangerous%20Tunnels/4259%20-%20Dangerous%20Tunnels.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4259, 'LiveArchive/4259%20-%20Dangerous%20Tunnels/4259%20-%20Dangerous%20Tunnels.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4259" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4381" target="_blank" rel="noopener noreferrer">KINA Is Not Abbreviation</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4381%20-%20KINA%20Is%20Not%20Abbreviation/4381%20-%20KINA%20Is%20Not%20Abbreviation.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4381, 'LiveArchive/4381%20-%20KINA%20Is%20Not%20Abbreviation/4381%20-%20KINA%20Is%20Not%20Abbreviation.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4381" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4437" target="_blank" rel="noopener noreferrer">Symbolic Logic Mechanization</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4437%20-%20Symbolic%20Logic%20Mechanization/4437%20-%20Symbolic%20Logic%20Mechanization.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4437, 'LiveArchive/4437%20-%20Symbolic%20Logic%20Mechanization/4437%20-%20Symbolic%20Logic%20Mechanization.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4437" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4504" target="_blank" rel="noopener noreferrer">Trick or Treat</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4504%20-%20Trick%20or%20Treat/4504%20-%20Trick%20or%20Treat.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4504, 'LiveArchive/4504%20-%20Trick%20or%20Treat/4504%20-%20Trick%20or%20Treat.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4504" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4505" target="_blank" rel="noopener noreferrer">Network Mess</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4505%20-%20Network%20Mess/4505%20-%20Network%20Mess.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4505, 'LiveArchive/4505%20-%20Network%20Mess/4505%20-%20Network%20Mess.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4505" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4508" target="_blank" rel="noopener noreferrer">Genetics</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4508%20-%20Genetics/4508%20-%20Genetics.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4508, 'LiveArchive/4508%20-%20Genetics/4508%20-%20Genetics.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4508" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4509" target="_blank" rel="noopener noreferrer">Haunted Graveyard</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4509%20-%20Haunted%20Graveyard/4509%20-%20Haunted%20Graveyard.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4509, 'LiveArchive/4509%20-%20Haunted%20Graveyard/4509%20-%20Haunted%20Graveyard.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4509" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4512" target="_blank" rel="noopener noreferrer">Happy Telephones</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4512%20-%20Happy%20Telephones/4512%20-%20Happy%20Telephones.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4512, 'LiveArchive/4512%20-%20Happy%20Telephones/4512%20-%20Happy%20Telephones.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4512" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4513" target="_blank" rel="noopener noreferrer">Stammering Aliens</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4513%20-%20Stammering%20Aliens/4513%20-%20Stammering%20Aliens.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4513, 'LiveArchive/4513%20-%20Stammering%20Aliens/4513%20-%20Stammering%20Aliens.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4513" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4652" target="_blank" rel="noopener noreferrer">Goguryeo and the Crown Prince</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4652%20-%20Goguryeo%20and%20the%20Crown%20Prince/4652%20-%20Goguryeo%20and%20the%20Crown%20Prince.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4652, 'LiveArchive/4652%20-%20Goguryeo%20and%20the%20Crown%20Prince/4652%20-%20Goguryeo%20and%20the%20Crown%20Prince.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4652" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4682" target="_blank" rel="noopener noreferrer">XOR Sum</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4682%20-%20XOR%20Sum/4682%20-%20XOR%20Sum.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4682, 'LiveArchive/4682%20-%20XOR%20Sum/4682%20-%20XOR%20Sum.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4682" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4744" target="_blank" rel="noopener noreferrer">Brute-force Algorithm</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4744%20-%20Brute-force%20Algorithm/4744%20-%20Brute-force%20Algorithm.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4744, 'LiveArchive/4744%20-%20Brute-force%20Algorithm/4744%20-%20Brute-force%20Algorithm.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4744" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4745" target="_blank" rel="noopener noreferrer">Compressed String</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">hashing</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4745%20-%20Compressed%20String/4745%20-%20Compressed%20String.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4745, 'LiveArchive/4745%20-%20Compressed%20String/4745%20-%20Compressed%20String.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4745" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4842" target="_blank" rel="noopener noreferrer">Infinite monkey theorem</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4842%20-%20Infinite%20monkey%20theorem/4842%20-%20Infinite%20monkey%20theorem.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4842, 'LiveArchive/4842%20-%20Infinite%20monkey%20theorem/4842%20-%20Infinite%20monkey%20theorem.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4842" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4844" target="_blank" rel="noopener noreferrer">String Popping</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4844%20-%20String%20Popping/4844%20-%20String%20Popping.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4844, 'LiveArchive/4844%20-%20String%20Popping/4844%20-%20String%20Popping.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4844" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4845" target="_blank" rel="noopener noreferrer">Password</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4845%20-%20Password/4845%20-%20Password.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4845, 'LiveArchive/4845%20-%20Password/4845%20-%20Password.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4845" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4847" target="_blank" rel="noopener noreferrer">Binary Search Tree</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4847%20-%20Binary%20Search%20Tree/4847%20-%20Binary%20Search%20Tree.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4847, 'LiveArchive/4847%20-%20Binary%20Search%20Tree/4847%20-%20Binary%20Search%20Tree.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4847" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4954" target="_blank" rel="noopener noreferrer">Lawn mower</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4954%20-%20Lawn%20mower/4954%20-%20Lawn%20mower.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4954, 'LiveArchive/4954%20-%20Lawn%20mower/4954%20-%20Lawn%20mower.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4954" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=4977" target="_blank" rel="noopener noreferrer">Enter The Dragon</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/4977%20-%20Enter%20The%20Dragon/4977%20-%20Enter%20The%20Dragon.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(4977, 'LiveArchive/4977%20-%20Enter%20The%20Dragon/4977%20-%20Enter%20The%20Dragon.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="4977" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=5717" target="_blank" rel="noopener noreferrer">Peach Blossom Spring</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/5717%20-%20Peach%20Blossom%20Spring/5717%20-%20Peach%20Blossom%20Spring.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(5717, 'LiveArchive/5717%20-%20Peach%20Blossom%20Spring/5717%20-%20Peach%20Blossom%20Spring.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="5717" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=5831" target="_blank" rel="noopener noreferrer">Bob's Race</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/5831%20-%20Bob's%20Race/5831%20-%20Bob's%20Race.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(5831, 'LiveArchive/5831%20-%20Bob's%20Race/5831%20-%20Bob's%20Race.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="5831" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=5833" target="_blank" rel="noopener noreferrer">Moles</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">hashing</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/5833%20-%20Moles/5833%20-%20Moles.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(5833, 'LiveArchive/5833%20-%20Moles/5833%20-%20Moles.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="5833" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=5834" target="_blank" rel="noopener noreferrer">Genghis Khan the Conqueror</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/5834%20-%20Genghis%20Khan%20the%20Conqueror/5834%20-%20Genghis%20Khan%20the%20Conqueror.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(5834, 'LiveArchive/5834%20-%20Genghis%20Khan%20the%20Conqueror/5834%20-%20Genghis%20Khan%20the%20Conqueror.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="5834" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=5837" target="_blank" rel="noopener noreferrer">Porcelain Exhibitions</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">max-flow</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/5837%20-%20Porcelain%20Exhibitions/5837%20-%20Porcelain%20Exhibitions.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(5837, 'LiveArchive/5837%20-%20Porcelain%20Exhibitions/5837%20-%20Porcelain%20Exhibitions.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="5837" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=5856" target="_blank" rel="noopener noreferrer">City Merger</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">dynamic-programming</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/5856%20-%20City%20Merger/5856%20-%20City%20Merger.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(5856, 'LiveArchive/5856%20-%20City%20Merger/5856%20-%20City%20Merger.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="5856" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=5880" target="_blank" rel="noopener noreferrer">Vigenère Cipher Encryption</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/5880%20-%20Vigen%C3%A8re%20Cipher%20Encryption/5880%20-%20Vigen%C3%A8re%20Cipher%20Encryption.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(5880, 'LiveArchive/5880%20-%20Vigen%C3%A8re%20Cipher%20Encryption/5880%20-%20Vigen%C3%A8re%20Cipher%20Encryption.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="5880" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=5885" target="_blank" rel="noopener noreferrer">Vigenère Cipher Analysis</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/5885%20-%20Vigen%C3%A8re%20Cipher%20Analysis/5885%20-%20Vigen%C3%A8re%20Cipher%20Analysis.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(5885, 'LiveArchive/5885%20-%20Vigen%C3%A8re%20Cipher%20Analysis/5885%20-%20Vigen%C3%A8re%20Cipher%20Analysis.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="5885" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=5903" target="_blank" rel="noopener noreferrer">Piece it together</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">max-flow</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/5903%20-%20Piece%20it%20together/5903%20-%20Piece%20it%20together.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(5903, 'LiveArchive/5903%20-%20Piece%20it%20together/5903%20-%20Piece%20it%20together%20(flow).cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="5903" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=5935" target="_blank" rel="noopener noreferrer">Crash and Go(relians)</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/5935%20-%20Crash%20and%20Go(relians)/5935%20-%20Crash%20and%20Go(relians).pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(5935, 'LiveArchive/5935%20-%20Crash%20and%20Go(relians)/5935%20-%20Crash%20and%20Go(relians).cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="5935" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=5964" target="_blank" rel="noopener noreferrer">LCM Extreme</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/5964%20-%20LCM%20Extreme/5964%20-%20LCM%20Extreme.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(5964, 'LiveArchive/5964%20-%20LCM%20Extreme/5964%20-%20LCM%20Extreme.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="5964" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6026" target="_blank" rel="noopener noreferrer">Asteroid Rangers</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6026%20-%20Asteroid%20Rangers/6026%20-%20Asteroid%20Rangers.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6026, 'LiveArchive/6026%20-%20Asteroid%20Rangers/6026%20-%20Asteroid%20Rangers.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6026" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6027" target="_blank" rel="noopener noreferrer">Curvy Little Bottles</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6027%20-%20Curvy%20Little%20Bottles/6027%20-%20Curvy%20Little%20Bottles.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6027, 'LiveArchive/6027%20-%20Curvy%20Little%20Bottles/6027%20-%20Curvy%20Little%20Bottles.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6027" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6028" target="_blank" rel="noopener noreferrer">Bus Tour</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6028%20-%20Bus%20Tour/6028%20-%20Bus%20Tour.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6028, 'LiveArchive/6028%20-%20Bus%20Tour/6028%20-%20Bus%20Tour.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6028" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6029" target="_blank" rel="noopener noreferrer">Fibonacci Words</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">hashing</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6029%20-%20Fibonacci%20Words/6029%20-%20Fibonacci%20Words.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6029, 'LiveArchive/6029%20-%20Fibonacci%20Words/6029%20-%20Fibonacci%20Words.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6029" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6030" target="_blank" rel="noopener noreferrer">Infiltration</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6030%20-%20Infiltration/6030%20-%20Infiltration.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6030, 'LiveArchive/6030%20-%20Infiltration/6030%20-%20Infiltration.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6030" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6031" target="_blank" rel="noopener noreferrer">Keys</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">dynamic-programming</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6031%20-%20Keys/6031%20-%20Keys.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6031, 'LiveArchive/6031%20-%20Keys/6031%20-%20Keys.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6031" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6032" target="_blank" rel="noopener noreferrer">Minimum Cost Flow</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6032%20-%20Minimum%20Cost%20Flow/6032%20-%20Minimum%20Cost%20Flow.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6032, 'LiveArchive/6032%20-%20Minimum%20Cost%20Flow/6032%20-%20Minimum%20Cost%20Flow.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6032" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6034" target="_blank" rel="noopener noreferrer">A Safe Bet</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6034%20-%20A%20Safe%20Bet/6034%20-%20A%20Safe%20Bet.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6034, 'LiveArchive/6034%20-%20A%20Safe%20Bet/6034%20-%20A%20Safe%20Bet.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6034" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6035" target="_blank" rel="noopener noreferrer">Shortest Flight Path</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6035%20-%20Shortest%20Flight%20Path/6035%20-%20Shortest%20Flight%20Path.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6035, 'LiveArchive/6035%20-%20Shortest%20Flight%20Path/6035%20-%20Shortest%20Flight%20Path.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6035" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6036" target="_blank" rel="noopener noreferrer">Stacking Plates</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">dynamic-programming</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6036%20-%20Stacking%20Plates/6036%20-%20Stacking%20Plates.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6036, 'LiveArchive/6036%20-%20Stacking%20Plates/6036%20-%20Stacking%20Plates.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6036" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6037" target="_blank" rel="noopener noreferrer">Takeover Wars</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6037%20-%20Takeover%20Wars/6037%20-%20Takeover%20Wars.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6037, 'LiveArchive/6037%20-%20Takeover%20Wars/6037%20-%20Takeover%20Wars.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6037" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6088" target="_blank" rel="noopener noreferrer">Approximate Sorting</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">dynamic-programming</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6088%20-%20Approximate%20Sorting/6088%20-%20Approximate%20Sorting.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6088, 'LiveArchive/6088%20-%20Approximate%20Sorting/6088%20-%20Approximate%20Sorting.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6088" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6404" target="_blank" rel="noopener noreferrer">SecurePINs</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6404%20-%20SecurePINs/6404%20-%20SecurePINs.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6404, 'LiveArchive/6404%20-%20SecurePINs/6404%20-%20SecurePINs.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6404" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6405" target="_blank" rel="noopener noreferrer">The Large Family</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6405%20-%20The%20Large%20Family/6405%20-%20The%20Large%20Family.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6405, 'LiveArchive/6405%20-%20The%20Large%20Family/6405%20-%20The%20Large%20Family.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6405" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6407" target="_blank" rel="noopener noreferrer">Clock Splitter</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6407%20-%20Clock%20Splitter/6407%20-%20Clock%20Splitter.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6407, 'LiveArchive/6407%20-%20Clock%20Splitter/6407%20-%20Clock%20Splitter.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6407" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6409" target="_blank" rel="noopener noreferrer">Some Pretty Peculiar Cells</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6409%20-%20Some%20Pretty%20Peculiar%20Cells/6409%20-%20Some%20Pretty%20Peculiar%20Cells.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6409, 'LiveArchive/6409%20-%20Some%20Pretty%20Peculiar%20Cells/6409%20-%20Some%20Pretty%20Peculiar%20Cells.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6409" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6444" target="_blank" rel="noopener noreferrer">Fast Food Prizes</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6444%20-%20Fast%20Food%20Prizes/6444%20-%20Fast%20Food%20Prizes.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6444, 'LiveArchive/6444%20-%20Fast%20Food%20Prizes/6444%20-%20Fast%20Food%20Prizes.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6444" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6447" target="_blank" rel="noopener noreferrer">Digital Content Protection</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6447%20-%20Digital%20Content%20Protection/6447%20-%20Digital%20Content%20Protection.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6447, 'LiveArchive/6447%20-%20Digital%20Content%20Protection/6447%20-%20Digital%20Content%20Protection.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6447" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6450" target="_blank" rel="noopener noreferrer">Social Advertising</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6450%20-%20Social%20Advertising/6450%20-%20Social%20Advertising.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6450, 'LiveArchive/6450%20-%20Social%20Advertising/6450%20-%20Social%20Advertising.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6450" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6465" target="_blank" rel="noopener noreferrer">Islands in the Data Stream</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6465%20-%20Islands%20in%20the%20Data%20Stream/6465%20-%20Islands%20in%20the%20Data%20Stream.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6465, 'LiveArchive/6465%20-%20Islands%20in%20the%20Data%20Stream/6465%20-%20Islands%20in%20the%20Data%20Stream.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6465" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6466" target="_blank" rel="noopener noreferrer">Von Neumann's Fly</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6466%20-%20Von%20Neumann's%20Fly/6466%20-%20Von%20Neumann's%20Fly.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6466, 'LiveArchive/6466%20-%20Von%20Neumann's%20Fly/6466%20-%20Von%20Neumann's%20Fly.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6466" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6467" target="_blank" rel="noopener noreferrer">Strahler Order</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6467%20-%20Strahler%20Order/6467%20-%20Strahler%20Order.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6467, 'LiveArchive/6467%20-%20Strahler%20Order/6467%20-%20Strahler%20Order.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6467" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6468" target="_blank" rel="noopener noreferrer">Pisano Periods</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6468%20-%20Pisano%20Periods/6468%20-%20Pisano%20Periods.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6468, 'LiveArchive/6468%20-%20Pisano%20Periods/6468%20-%20Pisano%20Periods.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6468" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6469" target="_blank" rel="noopener noreferrer">Deranged Exams</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6469%20-%20Deranged%20Exams/6469%20-%20Deranged%20Exams.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6469, 'LiveArchive/6469%20-%20Deranged%20Exams/6469%20-%20Deranged%20Exams.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6469" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6470" target="_blank" rel="noopener noreferrer">Chomp</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">dynamic-programming</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6470%20-%20Chomp/6470%20-%20Chomp.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6470, 'LiveArchive/6470%20-%20Chomp/6470%20-%20Chomp.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6470" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6471" target="_blank" rel="noopener noreferrer">Triangle Count Sequences of Polygon Triangulations</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6471%20-%20Triangle%20Count%20Sequences%20of%20Polygon%20Triangulations/6471%20-%20Triangle%20Count%20Sequences%20of%20Polygon%20Triangulations.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6471, 'LiveArchive/6471%20-%20Triangle%20Count%20Sequences%20of%20Polygon%20Triangulations/6471%20-%20Triangle%20Count%20Sequences%20of%20Polygon%20Triangulations.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6471" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6472" target="_blank" rel="noopener noreferrer">Powers of Pascal</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6472%20-%20Powers%20of%20Pascal/6472%20-%20Powers%20of%20Pascal.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6472, 'LiveArchive/6472%20-%20Powers%20of%20Pascal/6472%20-%20Powers%20of%20Pascal.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6472" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6495" target="_blank" rel="noopener noreferrer">Probability Paradox</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6495%20-%20Probability%20Paradox/6495%20-%20Probability%20Paradox.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6495, 'LiveArchive/6495%20-%20Probability%20Paradox/6495%20-%20Probability%20Paradox.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6495" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6496" target="_blank" rel="noopener noreferrer">Letter Cubes</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6496%20-%20Letter%20Cubes/6496%20-%20Letter%20Cubes.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6496, 'LiveArchive/6496%20-%20Letter%20Cubes/6496%20-%20Letter%20Cubes.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6496" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6497" target="_blank" rel="noopener noreferrer">Digit Sum</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6497%20-%20Digit%20Sum/6497%20-%20Digit%20Sum.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6497, 'LiveArchive/6497%20-%20Digit%20Sum/6497%20-%20Digit%20Sum.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6497" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6498" target="_blank" rel="noopener noreferrer">Cash Cow</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6498%20-%20Cash%20Cow/6498%20-%20Cash%20Cow.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6498, 'LiveArchive/6498%20-%20Cash%20Cow/6498%20-%20Cash%20Cow.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6498" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6499" target="_blank" rel="noopener noreferrer">Sort Me</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6499%20-%20Sort%20Me/6499%20-%20Sort%20Me.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6499, 'LiveArchive/6499%20-%20Sort%20Me/6499%20-%20Sort%20Me.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6499" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6554" target="_blank" rel="noopener noreferrer">Cuckoo for Hashing</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6554%20-%20Cuckoo%20for%20Hashing/6554%20-%20Cuckoo%20for%20Hashing.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6554, 'LiveArchive/6554%20-%20Cuckoo%20for%20Hashing/6554%20-%20Cuckoo%20for%20Hashing.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6554" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6557" target="_blank" rel="noopener noreferrer">Stampede!</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">max-flow</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6557%20-%20Stampede!/6557%20-%20Stampede!.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6557, 'LiveArchive/6557%20-%20Stampede!/6557%20-%20Stampede!.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6557" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6558" target="_blank" rel="noopener noreferrer">Super Phyllis</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6558%20-%20Super%20Phyllis/6558%20-%20Super%20Phyllis.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6558, 'LiveArchive/6558%20-%20Super%20Phyllis/6558%20-%20Super%20Phyllis.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6558" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6560" target="_blank" rel="noopener noreferrer">The Urge to Merge</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">dynamic-programming</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6560%20-%20The%20Urge%20to%20Merge/6560%20-%20The%20Urge%20to%20Merge.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6560, 'LiveArchive/6560%20-%20The%20Urge%20to%20Merge/6560%20-%20The%20Urge%20to%20Merge.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6560" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6561" target="_blank" rel="noopener noreferrer">Xenospeak</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6561%20-%20Xenospeak/6561%20-%20Xenospeak.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6561, 'LiveArchive/6561%20-%20Xenospeak/6561%20-%20Xenospeak.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6561" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6571" target="_blank" rel="noopener noreferrer">It Can Be Arranged</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">max-flow</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6571%20-%20It%20Can%20Be%20Arranged/6571%20-%20It%20Can%20Be%20Arranged.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6571, 'LiveArchive/6571%20-%20It%20Can%20Be%20Arranged/6571%20-%20It%20Can%20Be%20Arranged.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6571" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6582" target="_blank" rel="noopener noreferrer">Magical GCD</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6582%20-%20Magical%20GCD/6582%20-%20Magical%20GCD.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6582, 'LiveArchive/6582%20-%20Magical%20GCD/6582%20-%20Magical%20GCD.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6582" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6650" target="_blank" rel="noopener noreferrer">Falling Ants</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6650%20-%20Falling%20Ants/6650%20-%20Falling%20Ants.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6650, 'LiveArchive/6650%20-%20Falling%20Ants/6650%20-%20Falling%20Ants.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6650" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6653" target="_blank" rel="noopener noreferrer">Pattern Locker</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6653%20-%20Pattern%20Locker/6653%20-%20Pattern%20Locker.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6653, 'LiveArchive/6653%20-%20Pattern%20Locker/6653%20-%20Pattern%20Locker.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6653" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6657" target="_blank" rel="noopener noreferrer">GCD XOR</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6657%20-%20GCD%20XOR/6657%20-%20GCD%20XOR.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6657, 'LiveArchive/6657%20-%20GCD%20XOR/6657%20-%20GCD%20XOR.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6657" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6661" target="_blank" rel="noopener noreferrer">Equal Sum Sets</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6661%20-%20Equal%20Sum%20Sets/6661%20-%20Equal%20Sum%20Sets.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6661, 'LiveArchive/6661%20-%20Equal%20Sum%20Sets/6661%20-%20Equal%20Sum%20Sets.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6661" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6662" target="_blank" rel="noopener noreferrer">The Last Ant</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6662%20-%20The%20Last%20Ant/6662%20-%20The%20Last%20Ant.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6662, 'LiveArchive/6662%20-%20The%20Last%20Ant/6662%20-%20The%20Last%20Ant.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6662" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6663" target="_blank" rel="noopener noreferrer">Count the Regions</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6663%20-%20Count%20the%20Regions/6663%20-%20Count%20the%20Regions.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6663, 'LiveArchive/6663%20-%20Count%20the%20Regions/6663%20-%20Count%20the%20Regions.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6663" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6665" target="_blank" rel="noopener noreferrer">Dragon’s Cruller</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6665%20-%20Dragon%E2%80%99s%20Cruller/6665%20-%20Dragon%E2%80%99s%20Cruller.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6665, 'LiveArchive/6665%20-%20Dragon%E2%80%99s%20Cruller/6665%20-%20Dragon%E2%80%99s%20Cruller.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6665" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6732" target="_blank" rel="noopener noreferrer">Arrows and Quiver</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6732%20-%20Arrows%20and%20Quiver/6732%20-%20Arrows%20and%20Quiver.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6732, 'LiveArchive/6732%20-%20Arrows%20and%20Quiver/6732%20-%20Arrows%20and%20Quiver.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6732" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6733" target="_blank" rel="noopener noreferrer">Sorted Queues</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6733%20-%20Sorted%20Queues/6733%20-%20Sorted%20Queues.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6733, 'LiveArchive/6733%20-%20Sorted%20Queues/6733%20-%20Sorted%20Queues.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6733" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6739" target="_blank" rel="noopener noreferrer">House of Lac</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6739%20-%20House%20of%20Lac/6739%20-%20House%20of%20Lac.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6739, 'LiveArchive/6739%20-%20House%20of%20Lac/6739%20-%20House%20of%20Lac.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6739" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6750" target="_blank" rel="noopener noreferrer">LED Circuit</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6750%20-%20LED%20Circuit/6750%20-%20LED%20Circuit.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6750, 'LiveArchive/6750%20-%20LED%20Circuit/6750%20-%20LED%20Circuit.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6750" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6753" target="_blank" rel="noopener noreferrer">Wedding Hall</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6753%20-%20Wedding%20Hall/6753%20-%20Wedding%20Hall.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6753, 'LiveArchive/6753%20-%20Wedding%20Hall/6753%20-%20Wedding%20Hall.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6753" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6786" target="_blank" rel="noopener noreferrer">AFL Grand Final</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6786%20-%20AFL%20Grand%20Final/6786%20-%20AFL%20Grand%20Final.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6786, 'LiveArchive/6786%20-%20AFL%20Grand%20Final/6786%20-%20AFL%20Grand%20Final.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6786" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6787" target="_blank" rel="noopener noreferrer">Going Postal</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">dynamic-programming</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6787%20-%20Going%20Postal/6787%20-%20Going%20Postal.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6787, 'LiveArchive/6787%20-%20Going%20Postal/6787%20-%20Going%20Postal.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6787" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6789" target="_blank" rel="noopener noreferrer">Superstitious Socks</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6789%20-%20Superstitious%20Socks/6789%20-%20Superstitious%20Socks.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6789, 'LiveArchive/6789%20-%20Superstitious%20Socks/6789%20-%20Superstitious%20Socks.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6789" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6790" target="_blank" rel="noopener noreferrer">Chaos Management</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">max-flow</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6790%20-%20Chaos%20Management/6790%20-%20Chaos%20Management.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6790, 'LiveArchive/6790%20-%20Chaos%20Management/6790%20-%20Chaos%20Management.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6790" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6796" target="_blank" rel="noopener noreferrer">Factorial Factors</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6796%20-%20Factorial%20Factors/6796%20-%20Factorial%20Factors.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6796, 'LiveArchive/6796%20-%20Factorial%20Factors/6796%20-%20Factorial%20Factors.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6796" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6807" target="_blank" rel="noopener noreferrer">Túnel de Rata</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6807%20-%20T%C3%BAnel%20de%20Rata/6807%20-%20T%C3%BAnel%20de%20Rata.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6807, 'LiveArchive/6807%20-%20T%C3%BAnel%20de%20Rata/6807%20-%20T%C3%BAnel%20de%20Rata.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6807" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6832" target="_blank" rel="noopener noreferrer">Bit String Reordering</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6832%20-%20Bit%20String%20Reordering/6832%20-%20Bit%20String%20Reordering.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6832, 'LiveArchive/6832%20-%20Bit%20String%20Reordering/6832%20-%20Bit%20String%20Reordering.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6832" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6833" target="_blank" rel="noopener noreferrer">Miscalculation</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6833%20-%20Miscalculation/6833%20-%20Miscalculation.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6833, 'LiveArchive/6833%20-%20Miscalculation/6833%20-%20Miscalculation.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6833" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6834" target="_blank" rel="noopener noreferrer">Shopping</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6834%20-%20Shopping/6834%20-%20Shopping.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6834, 'LiveArchive/6834%20-%20Shopping/6834%20-%20Shopping.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6834" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6837" target="_blank" rel="noopener noreferrer">There is No Alternative</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6837%20-%20There%20is%20No%20Alternative/6837%20-%20There%20is%20No%20Alternative.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6837, 'LiveArchive/6837%20-%20There%20is%20No%20Alternative/6837%20-%20There%20is%20No%20Alternative.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6837" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6884" target="_blank" rel="noopener noreferrer">GREAT + SWERC = PORTO</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6884%20-%20GREAT%20+%20SWERC%20=%20PORTO/6884%20-%20GREAT%20+%20SWERC%20=%20PORTO.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6884, 'LiveArchive/6884%20-%20GREAT%20+%20SWERC%20=%20PORTO/6884%20-%20GREAT%20+%20SWERC%20=%20PORTO.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6884" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6885" target="_blank" rel="noopener noreferrer">Flowery Trails</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">graphs</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6885%20-%20Flowery%20Trails/6885%20-%20Flowery%20Trails.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6885, 'LiveArchive/6885%20-%20Flowery%20Trails/6885%20-%20Flowery%20Trails.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6885" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6886" target="_blank" rel="noopener noreferrer">Golf Bot</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6886%20-%20Golf%20Bot/6886%20-%20Golf%20Bot.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6886, 'LiveArchive/6886%20-%20Golf%20Bot/6886%20-%20Golf%20Bot.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6886" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6887" target="_blank" rel="noopener noreferrer">Book Club</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">max-flow</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6887%20-%20Book%20Club/6887%20-%20Book%20Club.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6887, 'LiveArchive/6887%20-%20Book%20Club/6887%20-%20Book%20Club.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6887" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6888" target="_blank" rel="noopener noreferrer">Ricochet Robots</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">hashing</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6888%20-%20Ricochet%20Robots/6888%20-%20Ricochet%20Robots.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6888, 'LiveArchive/6888%20-%20Ricochet%20Robots/6888%20-%20Ricochet%20Robots.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6888" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6889" target="_blank" rel="noopener noreferrer">City Park</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6889%20-%20City%20Park/6889%20-%20City%20Park.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6889, 'LiveArchive/6889%20-%20City%20Park/6889%20-%20City%20Park.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6889" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6890" target="_blank" rel="noopener noreferrer">Playing with Geometry</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6890%20-%20Playing%20with%20Geometry/6890%20-%20Playing%20with%20Geometry.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6890, 'LiveArchive/6890%20-%20Playing%20with%20Geometry/6890%20-%20Playing%20with%20Geometry.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6890" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6892" target="_blank" rel="noopener noreferrer">The Safe Secret</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">dynamic-programming</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6892%20-%20The%20Safe%20Secret/6892%20-%20The%20Safe%20Secret.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6892, 'LiveArchive/6892%20-%20The%20Safe%20Secret/6892%20-%20The%20Safe%20Secret.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6892" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6893" target="_blank" rel="noopener noreferrer">The Big Painting</a>
+		  </div>
+<div class="col-sm-auto"><abbr class="badge badge-light">hashing</abbr></div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6893%20-%20The%20Big%20Painting/6893%20-%20The%20Big%20Painting.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6893, 'LiveArchive/6893%20-%20The%20Big%20Painting/6893%20-%20The%20Big%20Painting.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6893" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6896" target="_blank" rel="noopener noreferrer">Eureka Theorem</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6896%20-%20Eureka%20Theorem/6896%20-%20Eureka%20Theorem.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6896, 'LiveArchive/6896%20-%20Eureka%20Theorem/6896%20-%20Eureka%20Theorem.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6896" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6897" target="_blank" rel="noopener noreferrer">Exploration</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6897%20-%20Exploration/6897%20-%20Exploration.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6897, 'LiveArchive/6897%20-%20Exploration/6897%20-%20Exploration.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6897" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6899" target="_blank" rel="noopener noreferrer">Permutation Cycles</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6899%20-%20Permutation%20Cycles/6899%20-%20Permutation%20Cycles.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6899, 'LiveArchive/6899%20-%20Permutation%20Cycles/6899%20-%20Permutation%20Cycles.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6899" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6910" target="_blank" rel="noopener noreferrer">Cutting Tree</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6910%20-%20Cutting%20Tree/6910%20-%20Cutting%20Tree.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6910, 'LiveArchive/6910%20-%20Cutting%20Tree/6910%20-%20Cutting%20Tree.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6910" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6929" target="_blank" rel="noopener noreferrer">Sums</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6929%20-%20Sums/6929%20-%20Sums.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6929, 'LiveArchive/6929%20-%20Sums/6929%20-%20Sums.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6929" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6930" target="_blank" rel="noopener noreferrer">Wheels</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6930%20-%20Wheels/6930%20-%20Wheels.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6930, 'LiveArchive/6930%20-%20Wheels/6930%20-%20Wheels.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6930" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6931" target="_blank" rel="noopener noreferrer">Can't stop playing</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6931%20-%20Can't%20stop%20playing/6931%20-%20Can't%20stop%20playing.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6931, 'LiveArchive/6931%20-%20Can't%20stop%20playing/6931%20-%20Can't%20stop%20playing.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6931" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6934" target="_blank" rel="noopener noreferrer">Good morning!</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6934%20-%20Good%20morning!/6934%20-%20Good%20morning!.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6934, 'LiveArchive/6934%20-%20Good%20morning!/6934%20-%20Good%20morning!.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6934" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6936" target="_blank" rel="noopener noreferrer">Pork barrel</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6936%20-%20Pork%20barrel/6936%20-%20Pork%20barrel.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6936, 'LiveArchive/6936%20-%20Pork%20barrel/6936%20-%20Pork%20barrel.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6936" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6937" target="_blank" rel="noopener noreferrer">The Imp</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6937%20-%20The%20Imp/6937%20-%20The%20Imp.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6937, 'LiveArchive/6937%20-%20The%20Imp/6937%20-%20The%20Imp.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6937" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6952" target="_blank" rel="noopener noreferrer">Cent Savings</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6952%20-%20Cent%20Savings/6952%20-%20Cent%20Savings.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6952, 'LiveArchive/6952%20-%20Cent%20Savings/6952%20-%20Cent%20Savings.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6952" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=6958" target="_blank" rel="noopener noreferrer">Indoorienteering</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/6958%20-%20Indoorienteering/6958%20-%20Indoorienteering.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(6958, 'LiveArchive/6958%20-%20Indoorienteering/6958%20-%20Indoorienteering.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="6958" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=7150" target="_blank" rel="noopener noreferrer">Amalgamated Artichokes</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/7150%20-%20Amalgamated%20Artichokes/7150%20-%20Amalgamated%20Artichokes.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(7150, 'LiveArchive/7150%20-%20Amalgamated%20Artichokes/7150%20-%20Amalgamated%20Artichokes.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="7150" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=7153" target="_blank" rel="noopener noreferrer">Cutting Cheese</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/7153%20-%20Cutting%20Cheese/7153%20-%20Cutting%20Cheese.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(7153, 'LiveArchive/7153%20-%20Cutting%20Cheese/7153%20-%20Cutting%20Cheese.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="7153" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=7155" target="_blank" rel="noopener noreferrer">Keyboarding</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/7155%20-%20Keyboarding/7155%20-%20Keyboarding.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(7155, 'LiveArchive/7155%20-%20Keyboarding/7155%20-%20Keyboarding.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="7155" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=7158" target="_blank" rel="noopener noreferrer">Ship Traffic</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/7158%20-%20Ship%20Traffic/7158%20-%20Ship%20Traffic.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(7158, 'LiveArchive/7158%20-%20Ship%20Traffic/7158%20-%20Ship%20Traffic.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="7158" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=7272" target="_blank" rel="noopener noreferrer">Promotions</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/7272%20-%20Promotions/7272%20-%20Promotions.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(7272, 'LiveArchive/7272%20-%20Promotions/7272%20-%20Promotions.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="7272" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=7273" target="_blank" rel="noopener noreferrer">Black Vienna</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/7273%20-%20Black%20Vienna/7273%20-%20Black%20Vienna.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(7273, 'LiveArchive/7273%20-%20Black%20Vienna/7273%20-%20Black%20Vienna.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="7273" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=7275" target="_blank" rel="noopener noreferrer">Dice Cup</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/7275%20-%20Dice%20Cup/7275%20-%20Dice%20Cup.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(7275, 'LiveArchive/7275%20-%20Dice%20Cup/7275%20-%20Dice%20Cup.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="7275" class="code hidden"></div>
+	</div>
+  </div>
+<div class="problemEntry">
+    <div class="row border-top">
+	  <div class="col-sm-auto my-auto"><img src="/assets/img/LiveArchive.png" alt="LiveArchive"></div>
+	  <div class="col-sm-8 my-auto">
+	    <div class="row problemData">
+		  <div class="col-sm-auto">
+	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;page=show_problem&amp;problem=7278" target="_blank" rel="noopener noreferrer">Game of Cards</a>
+		  </div>
+</div>
+	  </div>
+	  <div class="col-sm-1"><a href="https://github.com/fidel-schaposnik/icpc-solutions/raw/master/LiveArchive/7278%20-%20Game%20of%20Cards/7278%20-%20Game%20of%20Cards.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+	  <div class="col-sm-1"><a class="code btn btn-sm z-depth-0" role="button" onclick="toggleCode(7278, 'LiveArchive/7278%20-%20Game%20of%20Cards/7278%20-%20Game%20of%20Cards.cpp')">CODE</a></div>
+    </div>
+	<div class="row code">
+	  <div id="7278" class="code hidden"></div>
+	</div>
+  </div>
+</div>
+
+          </article>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        © Copyright 2022 Fidel I. Schaposnik Massolo. Last updated: November 28, 2022.
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Mansory & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script src="/assets/js/common.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+  </body>
+</html>
+

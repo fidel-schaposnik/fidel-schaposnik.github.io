@@ -2,7 +2,7 @@
 <html lang="en">
 
   <!-- Head -->
-  <head><meta http-equiv="refresh" content="3; url=https://fidel-schaposnik.github.io/" />        
+  <head>        
     <!-- Metadata, OpenGraph and Schema.org -->
     
 
@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Fidel I. Schaposnik Massolo | Page not found</title>
+    <title>Fidel I. Schaposnik Massolo | mathematica</title>
     <meta name="author" content="Fidel I. Schaposnik Massolo" />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="" />
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
 
 
@@ -36,7 +36,7 @@
 
 	<!-- Styles -->
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://fidel-schaposnik.github.io/404.html">
+    <link rel="canonical" href="https://fidel-schaposnik.github.io/mathematica/">
 
     <!-- Dark Mode -->
     <script src="/assets/js/theme.js"></script>
@@ -115,12 +115,165 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+            <h1 class="post-title">mathematica</h1>
+            <p class="post-description"></p>
           </header>
 
           <article>
-            <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://fidel-schaposnik.github.io/">here</a>.</p>
+            <script>
+
+statementBlock = `If the embedded version below does not work, you can download a copy <a href="PDFURL">here</a>.
+<object data="PDFURL#view=FitH&pagemode=none" type="application/pdf" style="width:100%;height:50vh">
+  <embed src="PDFURL#view=FitH&pagemode=none" type="application/pdf" />
+</object>`
+
+function toggleStatement(elementId, pdfUrl) {
+  var codeBlock = document.getElementById(elementId);
+  var innerHTML = codeBlock.innerHTML;
+  if (innerHTML == "") codeBlock.innerHTML = statementBlock.replaceAll('PDFURL', pdfUrl);
+  codeBlock.classList.toggle('open');
+}
+</script>
+
+<p>I use <a href="https://www.wolfram.com/mathematica/" target="_blank" rel="noopener noreferrer">Mathematica</a> for symbolic and numerical computations in most of my Physics projects. If you are interested in looking at or reusing the code from any of my <a href="/publications/">publications</a>, let me know by writing to <tt>fidel.s (at) gmail (dot) com</tt></p>
+
+<hr>
+
+<p>In 2019 I prepared some problems aiming to introduce Mathematica and improve the coding skills of people with a Physics background but not necessarily experienced in functional programming. While the Wolfram language has changed significantly since then, you may still find something useful in the following:</p>
+
+<div id="problemList" class="mathematica_problems">
+  <div class="problemEntry">
+    <div class="row border-top">
+      <div class="title col-sm-8 my-auto">
+        Mathematica basics
+      </div>
+      <div class="col-sm-2">
+        <a class="statement btn btn-sm z-depth-0" role="button" onclick="toggleStatement('problem1', '/assets/pdf/1%20-%20Basics.pdf')">STATEMENT</a>
+      </div>
+      <div class="col-sm-2">
+        <a href="/assets/other/1%20-%20Basics.nb" class="btn btn-sm z-depth-0" role="button">SOLUTION</a>
+      </div>
+    </div>
+    <div class="row statement">
+      <div id="problem1" class="statement hidden"></div>
+    </div>
+  </div>
+  <div class="problemEntry">
+    <div class="row border-top">
+      <div class="title col-sm-8 my-auto">
+        Ladder operators for the anharmonic oscillator
+      </div>
+      <div class="col-sm-2">
+        <a class="statement btn btn-sm z-depth-0" role="button" onclick="toggleStatement('problem2', '/assets/pdf/2%20-%20Ladder%20Operators.pdf')">STATEMENT</a>
+      </div>
+      <div class="col-sm-2">
+        <a href="/assets/other/2%20-%20Ladder%20Operators.nb" class="btn btn-sm z-depth-0" role="button">SOLUTION</a>
+      </div>
+    </div>
+    <div class="row statement">
+      <div id="problem2" class="statement hidden"></div>
+    </div>
+  </div>
+  <div class="problemEntry">
+    <div class="row border-top">
+      <div class="title col-sm-8 my-auto">
+        N-body choreographies
+      </div>
+      <div class="col-sm-2">
+        <a class="statement btn btn-sm z-depth-0" role="button" onclick="toggleStatement('problem3', '/assets/pdf/3%20-%20Choreographies.pdf')">STATEMENT</a>
+      </div>
+      <div class="col-sm-2">
+        <a href="/assets/other/3%20-%20Choreographies.nb" class="btn btn-sm z-depth-0" role="button">SOLUTION</a>
+      </div>
+    </div>
+    <div class="row statement">
+      <div id="problem3" class="statement hidden"></div>
+    </div>
+  </div>
+  <div class="problemEntry">
+    <div class="row border-top">
+      <div class="title col-sm-8 my-auto">
+        Finite N Sachdev-Ye-Kitaev model
+      </div>
+      <div class="col-sm-2">
+        <a class="statement btn btn-sm z-depth-0" role="button" onclick="toggleStatement('problem4', '/assets/pdf/4%20-%20Finite%20N%20SYK.pdf')">STATEMENT</a>
+      </div>
+      <div class="col-sm-2">
+        <a href="/assets/other/4%20-%20Finite%20N%20SYK.nb" class="btn btn-sm z-depth-0" role="button">SOLUTION</a>
+      </div>
+    </div>
+    <div class="row statement">
+      <div id="problem4" class="statement hidden"></div>
+    </div>
+  </div>
+    <div class="problemEntry">
+    <div class="row border-top">
+      <div class="title col-sm-8 my-auto">
+        Large N Sachdev-Ye-Kitaev model
+      </div>
+      <div class="col-sm-2">
+        <a class="statement btn btn-sm z-depth-0" role="button" onclick="toggleStatement('problem5', '/assets/pdf/5%20-%20Large%20N%20SYK.pdf')">STATEMENT</a>
+      </div>
+      <div class="col-sm-2">
+        <a href="/assets/other/5%20-%20Large%20N%20SYK.nb" class="btn btn-sm z-depth-0" role="button">SOLUTION</a>
+      </div>
+    </div>
+    <div class="row statement">
+      <div id="problem5" class="statement hidden"></div>
+    </div>
+  </div>
+  <div class="problemEntry">
+    <div class="row border-top">
+      <div class="title col-sm-6 my-auto">
+        Neural networks in Mathematica
+      </div>
+      <div class="col-sm-2">
+        <a href="/assets/other/6%20-%20Neural%20Networks.zip" class="btn btn-sm z-depth-0" role="button">DATASET</a>
+      </div>
+      <div class="col-sm-2">
+        <a class="statement btn btn-sm z-depth-0" role="button" onclick="toggleStatement('problem6', '/assets/pdf/6%20-%20Neural%20Networks.pdf')">STATEMENT</a>
+      </div>
+      <div class="col-sm-2">
+        <a href="/assets/other/6%20-%20Neural%20Networks.nb" class="btn btn-sm z-depth-0" role="button">SOLUTION</a>
+      </div>
+    </div>
+    <div class="row statement">
+      <div id="problem6" class="statement hidden"></div>
+    </div>
+  </div>
+  <div class="problemEntry">
+    <div class="row border-top">
+      <div class="title col-sm-8 my-auto">
+        Tensor models I
+      </div>
+      <div class="col-sm-2">
+        <a class="statement btn btn-sm z-depth-0" role="button" onclick="toggleStatement('problem7', '/assets/pdf/7%20-%20Graph%20Games%20I.pdf')">STATEMENT</a>
+      </div>
+      <div class="col-sm-2">
+        <a href="/assets/other/7%20-%20Graph%20Games%20I.nb" class="btn btn-sm z-depth-0" role="button">SOLUTION</a>
+      </div>
+    </div>
+    <div class="row statement">
+      <div id="problem7" class="statement hidden"></div>
+    </div>
+  </div>
+  <div class="problemEntry">
+    <div class="row border-top">
+      <div class="title col-sm-8 my-auto">
+        Tensor models II
+      </div>
+      <div class="col-sm-2">
+        <a class="statement btn btn-sm z-depth-0" role="button" onclick="toggleStatement('problem8', '/assets/pdf/8%20-%20Graph%20Games%20II.pdf')">STATEMENT</a>
+      </div>
+      <div class="col-sm-2">
+        <a href="/assets/other/8%20-%20Graph%20Games%20II.nb" class="btn btn-sm z-depth-0" role="button">SOLUTION</a>
+      </div>
+    </div>
+    <div class="row statement">
+      <div id="problem8" class="statement hidden"></div>
+    </div>
+  </div>
+</div>
 
           </article>
 
