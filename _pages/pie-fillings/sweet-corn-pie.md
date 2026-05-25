@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /cooking/pie-crusts/sweet-corn-pie
+permalink: /cooking/pie-fillings/sweet-corn-pie
 title: sweet corn pie
 description:
 nav: false
