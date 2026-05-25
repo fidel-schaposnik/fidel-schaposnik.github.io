@@ -12,7 +12,7 @@ This is a simple pie, perfect for a quick weekday lunch.
 - **Cooking:** 20 min.
 - **Makes:** 1 pie (6 to 8 portions)
 
-### **ingredients**
+### Ingredients
 
 - [1 simple savory pie crust dough](/cooking/pie-crusts/basic-savory-crust-dough)
 - 1 large onion, finely chopped
@@ -23,7 +23,7 @@ This is a simple pie, perfect for a quick weekday lunch.
 - 200 g soft cheese or cottage cheese, cubed
 - salt and pepper
 
-### **method**
+### Method
 
 1. Preheat the oven to 180 &deg;C.
 <br>&nbsp;<br>

@@ -13,7 +13,7 @@ fulfilling its purpose without flair but also without failing.
 - **Rest:** 30 min.
 - **Makes:** 1 crust (double the recipe if you are making a covered pie)
 
-### **ingredients**
+### Ingredients
 
 - 250 g plain flour
 - 1 large egg
@@ -21,7 +21,7 @@ fulfilling its purpose without flair but also without failing.
 - 50 ml water
 - a pinch of salt
 
-### **method**
+### Method
 
 1. Put the flour and salt in a large bowl, then add the lightly beaten egg, olive oil and water.
 Mix everything with a fork, then bring together with your hands. 
