@@ -9,8 +9,8 @@ nav_order: 4
 
 This is a collection of some recipes I cook regularly.
 
-## Pie crusts
+### pie crusts
   - [Basic savory crust dough](/cooking/pie-crusts/basic-savory-crust-dough/)
 
-## Pie fillings
+### pie fillings
   - [Sweet corn pie](/cooking/pie-fillings/sweet-corn-pie/)
