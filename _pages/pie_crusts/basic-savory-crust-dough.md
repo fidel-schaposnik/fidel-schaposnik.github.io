@@ -1,12 +1,12 @@
 ---
 layout: page
-permalink: /cooking/pie_crusts/basic_savory_crust
-title: basic savory crust
+permalink: /cooking/pie-crusts/basic-savory-crust-dough
+title: basic savory crust dough
 description:
 nav: false
 ---
 
-# Basic savory crust
+# Basic savory crust dough
 
 This is my go-to savory pie crust. It is very quick and easy to prepare, 
 fulfilling its purpose without flair but also without failing.

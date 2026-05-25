@@ -1,3 +1,11 @@
+---
+layout: page
+permalink: /cooking/pie-crusts/sweet-corn-pie
+title: sweet corn pie
+description:
+nav: false
+---
+
 # Sweet corn pie
 
 This is a simple 
