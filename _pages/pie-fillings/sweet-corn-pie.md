@@ -14,7 +14,7 @@ This is a simple pie, perfect for a quick weekday lunch.
 
 ### Ingredients
 
-- [1 simple savory pie crust dough](/cooking/pie-crusts/basic-savory-crust-dough)
+- [1 basic savory pie crust dough](/cooking/pie-crusts/basic-savory-pie-crust-dough)
 - 1 large onion, finely chopped
 - 2 garlic cloves, crushed
 - 4 tbsp olive oil

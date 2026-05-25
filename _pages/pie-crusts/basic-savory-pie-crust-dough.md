@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /cooking/pie-crusts/basic-savory-crust-dough
+permalink: /cooking/pie-crusts/basic-savory-pie-crust-dough
 title: basic savory crust dough
 description:
 nav: false
@@ -11,7 +11,7 @@ fulfilling its purpose without flair but also without failing.
 
 - **Prep:** 10 min.
 - **Rest:** 30 min.
-- **Makes:** 1 crust (double the recipe if you are making a covered pie)
+- **Makes:** 1 crust for a 26 cm tin (double the recipe if you are making a covered pie)
 
 ### Ingredients
 
