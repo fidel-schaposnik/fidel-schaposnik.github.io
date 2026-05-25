@@ -26,6 +26,8 @@ fulfilling its purpose without flair but also without failing.
 1. Put the flour and salt in a large bowl, then add the lightly beaten egg, olive oil and water.
 Mix everything with a fork, then bring together with your hands. 
 You may need a little more or less water depending on the type of flour, ambient humidity and the size of your egg.
+<br>&nbsp;<br>
 2. Transfer to your work surface and knead the dough for about five minutes, until all the flour has been incorporated.
 The dough should be homogenous, feeling smooth and a bit silky to the touch, not at all sticky.
+<br>&nbsp;<br>
 3. Make a ball and wrap in cling film. Refrigerate at least half an hour before using.
