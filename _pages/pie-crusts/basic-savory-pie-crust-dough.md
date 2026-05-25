@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /cooking/pie-crusts/basic-savory-pie-crust-dough
-title: basic savory crust dough
+title: basic savory pie crust dough
 description:
 nav: false
 ---
