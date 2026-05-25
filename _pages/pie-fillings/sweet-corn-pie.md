@@ -6,17 +6,15 @@ description:
 nav: false
 ---
 
-# Sweet corn pie
-
-This is a simple 
+This is a simple pie, perfect for a quick weekday lunch.
 
 - **Prep:** 30 min.
 - **Cooking:** 20 min.
-- **Makes:** 1 pie (6 portions)
+- **Makes:** 1 pie (6 to 8 portions)
 
-## Ingredients
+### **ingredients**
 
-- [1 simple savory pie crust dough](/cooking/pie_crusts/basic_savory_crust_dough)
+- [1 simple savory pie crust dough](/cooking/pie-crusts/basic-savory-crust-dough)
 - 1 large onion, finely chopped
 - 2 garlic cloves, crushed
 - 4 tbsp olive oil
@@ -25,7 +23,7 @@ This is a simple
 - 200 g soft cheese or cottage cheese, cubed
 - salt and pepper
 
-## Method
+### **method**
 
 1. Preheat the oven to 180 &deg;C.
 2. In a large pot, cover the corn cobs with water and add a pinch of salt. 
