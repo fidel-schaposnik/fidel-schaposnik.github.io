@@ -15,13 +15,14 @@ This is a simple pie, perfect for a quick weekday lunch.
 ### Ingredients
 
 - [1 basic savory pie crust dough](/cooking/pie-crusts/basic-savory-pie-crust-dough)
+- 3 corn cobs
 - 1 large onion, finely chopped
 - 2 garlic cloves, crushed
 - 4 tbsp olive oil
-- 3 corn cobs
 - 3 eggs, lightly beaten
 - 200 g soft cheese or cottage cheese, cubed
 - salt and pepper
+- butter, for greasing the pie tin
 
 ### Method
 
