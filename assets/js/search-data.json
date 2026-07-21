@@ -1,0 +1,33 @@
+---
+# Client-side search index (consumed by simple-jekyll-search via assets/js/search.js).
+# Liquid-rendered at build time over pages, posts and recipes.
+layout: null
+---
+[
+{%- assign first = false -%}
+{%- assign pages = site.pages | where_exp: "p", "p.title" -%}
+{%- for p in pages -%}
+  {%- unless p.autogen or p.redirect or p.title == "search" -%}
+    {%- if p.url contains "/cooking/" -%}{%- assign cat = "recipe" -%}
+    {%- else -%}{%- assign cat = p.search_category | default: "page" -%}{%- endif -%}
+    {%- if first %},{% endif -%}
+    {
+      "title": {{ p.title | jsonify }},
+      "url": {{ p.url | relative_url | jsonify }},
+      "category": {{ cat | jsonify }},
+      "content": {{ p.content | strip_html | normalize_whitespace | truncatewords: 40 | jsonify }}
+    }
+    {%- assign first = true -%}
+  {%- endunless -%}
+{%- endfor -%}
+{%- for post in site.posts -%}
+  {%- if first %},{% endif -%}
+  {
+    "title": {{ post.title | jsonify }},
+    "url": {{ post.url | relative_url | jsonify }},
+    "category": "blog",
+    "content": {{ post.content | strip_html | normalize_whitespace | truncatewords: 40 | jsonify }}
+  }
+  {%- assign first = true -%}
+{%- endfor -%}
+]

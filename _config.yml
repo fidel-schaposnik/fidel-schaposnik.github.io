@@ -87,9 +87,21 @@ permalink: /blog/:year/:title/
 pagination:
   enabled: true
 
-# Comments
-disqus_shortname: fidel-schaposnik # put your disqus shortname
-# https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+# Comments — giscus (GitHub Discussions based; https://giscus.app)
+# Comments render on a post only when it sets `comments: true` in its front
+# matter AND giscus.repo_id below is filled in. To enable:
+#   1. Enable "Discussions" on the GitHub repo (Settings -> Features).
+#   2. Install the giscus app: https://github.com/apps/giscus
+#   3. Go to https://giscus.app, enter the repo, pick the "Announcements"
+#      category, and copy the repo-id and category-id it generates below.
+giscus:
+  repo: fidel-schaposnik/fidel-schaposnik.github.io
+  repo_id: ""            # <- paste from giscus.app
+  category: "Announcements"
+  category_id: ""        # <- paste from giscus.app
+  mapping: "pathname"
+  reactions_enabled: "1"
+  input_position: "bottom"
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -266,6 +278,7 @@ enable_navbar_social:       false  # enables displaying social links in the
 enable_project_categories:  true   # enables categorization of projects into
                                    # multiple categories
 enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
+enable_search:              true   # enables the client-side navbar search box
 
 
 # -----------------------------------------------------------------------------
@@ -289,3 +302,6 @@ mathjax:
 medium_zoom:
   version: "1.1.0"
   integrity: "sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc="
+simple_jekyll_search:
+  version: "1.10.0"
+  integrity: "sha256-ieUctArvXa2Jaww7u+OyjqzBpOW04E9K17BzP8qrxVM="

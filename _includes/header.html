@@ -78,6 +78,17 @@
               </li>
               {%- endif %}
 
+              {%- if site.enable_search %}
+              <!-- Search -->
+              <li class="nav-item search-nav">
+                <div class="search-box">
+                  <i class="fas fa-magnifying-glass search-icon" aria-hidden="true"></i>
+                  <input type="text" id="search-input" class="search-input" placeholder="Search&hellip;" autocomplete="off" aria-label="Search site" data-search-json="{{ '/assets/js/search-data.json' | relative_url }}">
+                  <ul id="search-results" class="search-results"></ul>
+                </div>
+              </li>
+              {%- endif %}
+
               {%- if site.enable_darkmode %}
               <!-- Toogle theme mode -->
               <div class = "toggle-container">
