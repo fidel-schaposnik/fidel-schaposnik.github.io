@@ -169,7 +169,8 @@ blockquote {
   }
   .navbar-nav .nav-item.active>.nav-link {
       background-color: inherit;
-      font-weight: bolder;
+      font-weight: 400; // active items are indicated by colour only (matches the
+                        // pre-Bootstrap-5 look; "bolder" now resolves to 700 without MDB)
       color: var(--global-theme-color);
       &:hover {
         color: var(--global-hover-color);

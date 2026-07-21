@@ -305,3 +305,6 @@ medium_zoom:
 simple_jekyll_search:
   version: "1.10.0"
   integrity: "sha256-ieUctArvXa2Jaww7u+OyjqzBpOW04E9K17BzP8qrxVM="
+highlightjs:
+  version: "11.11.1"
+  integrity: "sha256-xKOZ3W9Ii8l6NUbjR2dHs+cUyZxXuUcxVMb7jSWbk4E="
