@@ -6,6 +6,11 @@ description:
 nav: false
 ---
 
+<!-- highlight.js: colours the solution code that is fetched & injected at runtime -->
+<link rel="stylesheet" href="{{ '/assets/css/hljs-light.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/hljs-dark.css' | relative_url }}">
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@{{ site.highlightjs.version }}/highlight.min.js" integrity="{{ site.highlightjs.integrity }}" crossorigin="anonymous"></script>
+
 <script>
 function filterNames() {
   var textFilter = document.getElementById("textFilter");
@@ -27,7 +32,7 @@ function filterNames() {
   }
 }
 
-var preCode = '<pre class="code"><code class="language-c++">';
+var preCode = '<pre class="code"><code class="language-cpp">';
 var postCode = '</code></pre>';
 
 String.prototype.toHtmlEntities = function() {
@@ -43,9 +48,15 @@ function toggleCode(elementId, code_path) {
   if (innerHTML == "") {
 	fetch('https://api.github.com/repos/fidel-schaposnik/icpc-solutions/contents/'+code_path)
 		.then(response => response.json())
-		.then( data => codeBlock.innerHTML = preCode+atob(data['content']).toHtmlEntities()+postCode);
+		.then( data => {
+			codeBlock.innerHTML = preCode+atob(data['content']).toHtmlEntities()+postCode;
+			var codeEl = codeBlock.querySelector('code');
+			if (codeEl && window.hljs) { hljs.highlightElement(codeEl); }
+		});
   }
-  codeBlock.toggleClass('open');
+  // NB: the show/hide toggle of the .code.hidden block is handled by the
+  // a.code click handler in assets/js/common.js (this element also has
+  // class="code"); toggling .open here too would cancel that out.
 }
 </script>
 
@@ -72,7 +83,7 @@ I am (slowly) adding some of the problems and solutions I used to practice, as w
 	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&page=show_problem&problem={{ problem.problem_id }}">{{ problem.problem_name }}</a>
 		  </div>
 		  {%- for tag in problem.tags -%}
-		  <div class="col-sm-auto"><abbr class="badge badge-light">{{ tag }}</abbr></div>
+		  <div class="col-sm-auto"><abbr class="badge text-bg-light">{{ tag }}</abbr></div>
 		  {%- endfor -%}
 		</div>
 	  </div>

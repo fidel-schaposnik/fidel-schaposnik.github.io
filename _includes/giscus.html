@@ -1,0 +1,48 @@
+{%- comment -%}
+  giscus comments (GitHub Discussions). Renders only when site.giscus.repo_id is
+  configured in _config.yml, so this stays inert until the repo is set up.
+  Theme is initialised from, and kept in sync with, the site dark-mode toggle.
+{%- endcomment -%}
+{%- if site.giscus.repo_id and site.giscus.repo_id != "" -%}
+<div class="giscus"></div>
+<script>
+  (function () {
+    function giscusTheme() {
+      var t = document.documentElement.getAttribute('data-theme') || localStorage.getItem('theme');
+      return t === 'dark' ? 'dark' : 'light';
+    }
+
+    var s = document.createElement('script');
+    s.src = 'https://giscus.app/client.js';
+    s.setAttribute('data-repo', '{{ site.giscus.repo }}');
+    s.setAttribute('data-repo-id', '{{ site.giscus.repo_id }}');
+    s.setAttribute('data-category', '{{ site.giscus.category }}');
+    s.setAttribute('data-category-id', '{{ site.giscus.category_id }}');
+    s.setAttribute('data-mapping', '{{ site.giscus.mapping | default: "pathname" }}');
+    s.setAttribute('data-strict', '0');
+    s.setAttribute('data-reactions-enabled', '{{ site.giscus.reactions_enabled | default: "1" }}');
+    s.setAttribute('data-emit-metadata', '0');
+    s.setAttribute('data-input-position', '{{ site.giscus.input_position | default: "bottom" }}');
+    s.setAttribute('data-theme', giscusTheme());
+    s.setAttribute('data-lang', 'en');
+    s.crossOrigin = 'anonymous';
+    s.async = true;
+    document.querySelector('.giscus').appendChild(s);
+
+    // Keep giscus in sync with the site's dark-mode toggle.
+    var toggle = document.getElementById('light-toggle');
+    if (toggle) {
+      toggle.addEventListener('click', function () {
+        setTimeout(function () {
+          var frame = document.querySelector('iframe.giscus-frame');
+          if (!frame) return;
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme: giscusTheme() } } },
+            'https://giscus.app'
+          );
+        }, 50);
+      });
+    }
+  })();
+</script>
+{%- endif -%}

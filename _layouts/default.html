@@ -7,7 +7,7 @@ layout: parse
   <!-- Head -->
   <head>
   {%- if page.redirect -%}
-    <meta http-equiv="refresh" content="3; url={{ site.baseurl | prepend: site.url }}/" />
+    <meta http-equiv="refresh" content="3; url={{ '/' | relative_url }}" />
   {%- endif -%}
   {% include head.html %}
   {% include scripts/analytics.html %}
@@ -28,10 +28,9 @@ layout: parse
     {%- include footer.html %}
 
     <!-- JavaScripts -->
-    {% include scripts/jquery.html %}
     {% include scripts/bootstrap.html %}
-    {% include scripts/masonry.html %}
     {% include scripts/misc.html %}
+    {% include scripts/search.html %}
     {% include scripts/mathjax.html %}
   </body>
 </html>

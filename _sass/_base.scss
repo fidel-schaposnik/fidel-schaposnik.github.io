@@ -2,6 +2,21 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+// MDBootstrap compatibility shims.
+// MDBootstrap was dropped in the Bootstrap 5 migration; these are the only two
+// MDB elevation classes still referenced in content/templates (buttons, figures).
+// Defining them here keeps existing markup working without pulling in MDB.
+.z-depth-0 {
+  box-shadow: none !important;
+}
+.z-depth-1 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}
+// MDBootstrap used to uppercase all button text; preserve that look.
+.btn {
+  text-transform: uppercase;
+}
+
 // Typography
 
 p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
@@ -154,7 +169,8 @@ blockquote {
   }
   .navbar-nav .nav-item.active>.nav-link {
       background-color: inherit;
-      font-weight: bolder;
+      font-weight: 400; // active items are indicated by colour only (matches the
+                        // pre-Bootstrap-5 look; "bolder" now resolves to 700 without MDB)
       color: var(--global-theme-color);
       &:hover {
         color: var(--global-hover-color);
@@ -210,6 +226,109 @@ blockquote {
   }
   .bottom-bar {
     transform: rotate(0);
+  }
+}
+
+
+// Navbar search (simple-jekyll-search). Theme-aware via CSS variables.
+
+.search-nav {
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+
+  .search-icon {
+    position: absolute;
+    left: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--global-text-color);
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  .search-input {
+    width: 8.5rem;
+    padding: 0.25rem 0.5rem 0.25rem 1.6rem;
+    font-size: 0.9rem;
+    color: var(--global-text-color);
+    background-color: transparent;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 1.2rem;
+    outline: none;
+    transition: width 0.25s ease, border-color 0.25s ease;
+
+    &::placeholder {
+      color: var(--global-text-color);
+      opacity: 0.5;
+    }
+    &:focus {
+      width: 11rem;
+      border-color: var(--global-theme-color);
+    }
+  }
+
+  .search-results {
+    position: absolute;
+    top: calc(100% + 0.35rem);
+    right: 0;
+    z-index: 1050;
+    min-width: 15rem;
+    max-width: 22rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    background-color: var(--global-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.4rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    overflow: hidden;
+
+    &:empty {
+      display: none;
+    }
+
+    li a {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.5rem;
+      padding: 0.45rem 0.7rem;
+      color: var(--global-text-color);
+      text-decoration: none;
+
+      &:hover {
+        background-color: var(--global-divider-color);
+        text-decoration: none;
+      }
+    }
+
+    .search-title {
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .search-cat {
+      flex-shrink: 0;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--global-theme-color);
+    }
+
+    .search-empty {
+      padding: 0.45rem 0.7rem;
+      color: var(--global-text-color);
+      opacity: 0.6;
+      font-size: 0.85rem;
+    }
   }
 }
 
