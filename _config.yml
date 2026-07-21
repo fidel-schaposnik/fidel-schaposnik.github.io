@@ -96,9 +96,9 @@ pagination:
 #      category, and copy the repo-id and category-id it generates below.
 giscus:
   repo: fidel-schaposnik/fidel-schaposnik.github.io
-  repo_id: ""            # <- paste from giscus.app
+  repo_id: "R_kgDOG2pOdQ"
   category: "Announcements"
-  category_id: ""        # <- paste from giscus.app
+  category_id: "DIC_kwDOG2pOdc4DBrUj"
   mapping: "pathname"
   reactions_enabled: "1"
   input_position: "bottom"
