@@ -56,5 +56,5 @@
             <a href="{{ site.dblp_url }}" title="DBLP"><i class="ai ai-dblp"></i></a>
             {% endif %}
             {%- if site.rss_icon -%}
-            <a href="{{ site.baseurl | prepend: site.url }}/feed.xml" title="RSS Feed"><i class="fas fa-rss-square"></i></a>
+            <a href="{{ '/feed.xml' | relative_url }}" title="RSS Feed"><i class="fas fa-rss-square"></i></a>
             {% endif %}
