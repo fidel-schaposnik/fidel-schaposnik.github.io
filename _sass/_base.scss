@@ -2,6 +2,17 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+// MDBootstrap compatibility shims.
+// MDBootstrap was dropped in the Bootstrap 5 migration; these are the only two
+// MDB elevation classes still referenced in content/templates (buttons, figures).
+// Defining them here keeps existing markup working without pulling in MDB.
+.z-depth-0 {
+  box-shadow: none !important;
+}
+.z-depth-1 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
 // Typography
 
 p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {

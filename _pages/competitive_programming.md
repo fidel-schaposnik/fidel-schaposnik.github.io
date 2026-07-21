@@ -72,7 +72,7 @@ I am (slowly) adding some of the problems and solutions I used to practice, as w
 	        <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&page=show_problem&problem={{ problem.problem_id }}">{{ problem.problem_name }}</a>
 		  </div>
 		  {%- for tag in problem.tags -%}
-		  <div class="col-sm-auto"><abbr class="badge badge-light">{{ tag }}</abbr></div>
+		  <div class="col-sm-auto"><abbr class="badge text-bg-light">{{ tag }}</abbr></div>
 		  {%- endfor -%}
 		</div>
 	  </div>
