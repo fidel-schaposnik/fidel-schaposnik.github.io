@@ -45,7 +45,9 @@ function toggleCode(elementId, code_path) {
 		.then(response => response.json())
 		.then( data => codeBlock.innerHTML = preCode+atob(data['content']).toHtmlEntities()+postCode);
   }
-  codeBlock.toggleClass('open');
+  // NB: the show/hide toggle of the .code.hidden block is handled by the
+  // a.code click handler in assets/js/common.js (this element also has
+  // class="code"); toggling .open here too would cancel that out.
 }
 </script>
 
