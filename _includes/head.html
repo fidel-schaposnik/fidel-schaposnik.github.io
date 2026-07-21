@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@{{ site.academicons.version }}/css/academicons.min.css" integrity="{{ site.academicons.integrity }}" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
 
-    <!-- Code Syntax Highlighting -->
-    <link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/{{ site.highlight_theme }}.css" />
+    <!-- Code Syntax Highlighting (vendored locally; see assets/css/) -->
+    <link rel="stylesheet" href="{{ site.highlight_theme | prepend: '/assets/css/' | append: '.css' | relative_url }}" />
 
     <!-- Favicon.io -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
