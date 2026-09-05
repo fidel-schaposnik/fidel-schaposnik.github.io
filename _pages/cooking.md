@@ -16,3 +16,6 @@ This is a collection of some recipes I cook regularly.
 ### pie fillings
   - [Sweet corn pie](/cooking/pie-fillings/sweet-corn-pie)
   - [Leek pie](/cooking/pie-fillings/leek-pie)
+
+### pasta
+  - [Spicy cherry and capers sauce](/cooking/pasta/spicy-cherry-and-capers-sauce)
