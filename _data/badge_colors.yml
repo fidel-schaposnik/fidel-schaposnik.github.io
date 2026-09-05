@@ -1,8 +1,0 @@
-"red":       "badge text-bg-danger"
-"blue":      "badge text-bg-primary"
-"grey":      "badge text-bg-secondary"
-"green":     "badge text-bg-success"
-"yellow":    "badge text-bg-warning"
-"cyan":      "badge text-bg-info"
-"lightgrey": "badge text-bg-light"
-"darkgrey":  "badge text-bg-dark"

@@ -1,66 +1,225 @@
----
-layout: default
-title: blog
-pagination:
-  enabled: true
-  collection: posts
-  permalink: /page/:num/
-  per_page: 3
-  sort_field: date
-  sort_reverse: true
-  trail:
-    before: 1 # The number of links before the current page
-    after: 3  # The number of links after the current page
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="post">
+  <!-- Head -->
+  <head>        
+    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fidel I. Schaposnik Massolo | blog</title>
+    <meta name="author" content="Fidel I. Schaposnik Massolo" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-2FMn2Zx6PuH5tdBQDRNwrOo60ts5wWPC9R8jK67b3t4=" crossorigin="anonymous">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting (vendored locally; see assets/css/) -->
+    <link rel="stylesheet" href="/assets/css/github.css" />
+    <!-- Dark-mode syntax colours (Rouge github.dark, scoped to [data-theme="dark"]) -->
+    <link rel="stylesheet" href="/assets/css/rouge-dark.css" />
+
+    <!-- Favicon.io -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+	<!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://fidel-schaposnik.github.io/blog/">
+
+    <!-- Dark Mode -->
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2JDVD6KLP2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-2JDVD6KLP2');
+  </script>
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title fw-lighter" href="/"><span class="fw-bold">Fidel I.</span> Schaposnik Massolo</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="visually-hidden">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-end" id="navbarNav">
+            <ul class="navbar-nav ms-auto flex-nowrap">
+
+              <!-- About -->
+              <!--<li class="nav-item ">
+                <a class="nav-link" href="/">about</a>
+              </li>-->
+              
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">publications</a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">programming</a>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/competitive_programming/">competitive programming</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/mathematica/">mathematica</a>
+                </div>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/teaching/">teaching</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/cooking/">cooking</a>
+              </li>
+              <!-- Blog -->
+              <li class="nav-item active">
+                <a class="nav-link" href="/blog/">blog<span class="visually-hidden">(current)</span></a>
+              </li>
+              <!-- Search -->
+              <li class="nav-item search-nav">
+                <div class="search-box">
+                  <i class="fas fa-magnifying-glass search-icon" aria-hidden="true"></i>
+                  <input type="text" id="search-input" class="search-input" placeholder="Search&hellip;" autocomplete="off" aria-label="Search site" data-search-json="/assets/js/search-data.json">
+                  <ul id="search-results" class="search-results"></ul>
+                </div>
+              </li>
+              <!-- Toogle theme mode -->
+              <div class = "toggle-container">
+                <a id = "light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <div class="post">
 
   <div class="header-bar">
-    <h1>{{ site.blog_name }}</h1>
-    <h2>{{ site.blog_description }}</h2>
+    <h1>my personal blog</h1>
+    <h2>(under construction)</h2>
   </div>
 
 
   <ul class="post-list">
-    {% for post in paginator.posts %}
+    
 
-    {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
-    {% assign year = post.date | date: "%Y" %}
-    {% assign tags = post.tags | join: "" %}
-    {% assign categories = post.categories | join: "" %}
+    
+    
+    
+    
 
     <li>
-      <h3><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <h3><a class="post-title" href="/blog/2022/tfgnn-intro/">Introduction to TensorFlow GNN</a>
       </h3>
-      <p>{{ post.description }}</p>
-      <p class="post-meta"> {{read_time}} min read &nbsp; &middot; &nbsp;
-        {{ post.date | date: '%B %-d, %Y' }}
+      <p>A Graph Attention baseline for drug cardiotoxicity detection</p>
+      <p class="post-meta"> 69 min read &nbsp; &middot; &nbsp;
+        June 23, 2022
       </p>
       <p class="post-tags">
-        <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
-          <i class="fas fa-calendar fa-sm"></i> {{ year }} </a>
+        <a href="/blog/2022">
+          <i class="fas fa-calendar fa-sm"></i> 2022 </a>
 
-          {% if tags != "" %}
+          
           &nbsp; &middot; &nbsp;
-            {% for tag in post.tags %}
-            <a href="{{ tag | prepend: '/blog/tag/' | prepend: site.baseurl}}">
-              <i class="fas fa-hashtag fa-sm"></i> {{ tag }}</a> &nbsp;
-              {% endfor %}
-          {% endif %}
+            
+            <a href="/blog/tag/python">
+              <i class="fas fa-hashtag fa-sm"></i> python</a> &nbsp;
+              
+            <a href="/blog/tag/graphs">
+              <i class="fas fa-hashtag fa-sm"></i> graphs</a> &nbsp;
+              
+            <a href="/blog/tag/neural-networks">
+              <i class="fas fa-hashtag fa-sm"></i> neural-networks</a> &nbsp;
+              
+            <a href="/blog/tag/tensorflow-gnn">
+              <i class="fas fa-hashtag fa-sm"></i> tensorflow-gnn</a> &nbsp;
+              
+            <a href="/blog/tag/tensorflow-datasets">
+              <i class="fas fa-hashtag fa-sm"></i> tensorflow-datasets</a> &nbsp;
+              
+          
 
-          {% if categories != "" %}
+          
           &nbsp; &middot; &nbsp;
-            {% for category in post.categories %}
-            <a href="{{ category | prepend: '/blog/category/' | prepend: site.baseurl}}">
-              <i class="fas fa-tag fa-sm"></i> {{ category }}</a> &nbsp;
-              {% endfor %}
-          {% endif %}
+            
+            <a href="/blog/category/programming">
+              <i class="fas fa-tag fa-sm"></i> programming</a> &nbsp;
+              
+          
     </p>
     </li>
 
-    {% endfor %}
+    
   </ul>
 
-  {% include pagination.html %}
+  
 
 </div>
+
+    </div>
+
+    <!-- Footer -->    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        &copy; Copyright 2026 Fidel I. Schaposnik Massolo. Last updated: September 05, 2026.
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- Bootstrap 5 bundle (includes Popper; no jQuery required) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha256-5P1JGBOIxI7FBAvT/mb1fCnI5n/NhQKzNUuW7Hq0fMc=" crossorigin="anonymous"></script>
+
+    
+  <!-- Medium Zoom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+  <script src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script src="/assets/js/common.js"></script>
+
+    
+  <!-- Client-side search (simple-jekyll-search, vanilla JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js" integrity="sha256-ieUctArvXa2Jaww7u+OyjqzBpOW04E9K17BzP8qrxVM=" crossorigin="anonymous"></script>
+  <script src="/assets/js/search.js"></script>
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+
+  </body>
+</html>
+

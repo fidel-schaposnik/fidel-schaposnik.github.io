@@ -1,33 +1,111 @@
----
-# Client-side search index (consumed by simple-jekyll-search via assets/js/search.js).
-# Liquid-rendered at build time over pages, posts and recipes.
-layout: null
----
-[
-{%- assign first = false -%}
-{%- assign pages = site.pages | where_exp: "p", "p.title" -%}
-{%- for p in pages -%}
-  {%- unless p.autogen or p.redirect or p.title == "search" -%}
-    {%- if p.url contains "/cooking/" -%}{%- assign cat = "recipe" -%}
-    {%- else -%}{%- assign cat = p.search_category | default: "page" -%}{%- endif -%}
-    {%- if first %},{% endif -%}
-    {
-      "title": {{ p.title | jsonify }},
-      "url": {{ p.url | relative_url | jsonify }},
-      "category": {{ cat | jsonify }},
-      "content": {{ p.content | strip_html | normalize_whitespace | truncatewords: 40 | jsonify }}
-    }
-    {%- assign first = true -%}
-  {%- endunless -%}
-{%- endfor -%}
-{%- for post in site.posts -%}
-  {%- if first %},{% endif -%}
-  {
-    "title": {{ post.title | jsonify }},
-    "url": {{ post.url | relative_url | jsonify }},
+[{
+      "title": "about",
+      "url": "/",
+      "category": "page",
+      "content": "I am a high-energy physicist previously working as postdoctoral researcher at Institut des Hautes Études Scientifiques (France), Université Libre de Bruxelles (Belgium) and Institute for Basic Science (South Korea). I am interested mostly in holography and low-dimensional models of quantum..."
+    },{
+      "title": "basic savory pie crust dough",
+      "url": "/cooking/pie-crusts/basic-savory-pie-crust-dough",
+      "category": "recipe",
+      "content": "This is my go-to savory pie crust. It is very quick and easy to prepare, fulfilling its purpose without flair but also without failing. Prep: 10 min. Rest: 30 min. Makes: 1 crust for a 26 cm tin (double the..."
+    },{
+      "title": "basic sweet pie crust",
+      "url": "/cooking/pie-crusts/basic-sweet-pie-crust",
+      "category": "recipe",
+      "content": "This is my go-to sweet pie crust. It is very quick and easy to prepare, great when you do not want anything to distract from the filling. It can be used as a base for no-bake pies and cheesecakes, but..."
+    },{
+      "title": "competitive programming",
+      "url": "/competitive_programming/",
+      "category": "page",
+      "content": "I started participating in the ACM International Collegiate Programming Contest (ICPC) in 2006, as a member of team “La JiRaFa” along with Joaquin Rodrigues Jacinto and Ramiro Lafuente. We qualified to the ACM–ICPC World Finals twice, in 2009 (Stockholm) and..."
+    },{
+      "title": "cooking",
+      "url": "/cooking/",
+      "category": "recipe",
+      "content": "This is a collection of some recipes I cook regularly. pie crusts Basic savory pie crust dough Basic sweet pie crust pie fillings Sweet corn pie Leek pie pasta Spicy cherry and capers sauce"
+    },{
+      "title": "curriculum vitae",
+      "url": "/cv/",
+      "category": "page",
+      "content": "If the embedded version below does not work, you can download a copy here."
+    },{
+      "title": "gallery",
+      "url": "/gallery/",
+      "category": "page",
+      "content": ""
+    },{
+      "title": "leek pie",
+      "url": "/cooking/pie-fillings/leek-pie",
+      "category": "recipe",
+      "content": "Another simple pie, perfect for a quick weekday lunch. Prep: 30 min. Cooking: 20 min. Makes: 1 pie (6 to 8 portions) Ingredients 1 basic savory pie crust dough 800 g leeks, white and light green parts sliced to get..."
+    },{
+      "title": "mathematica",
+      "url": "/mathematica/",
+      "category": "page",
+      "content": "I use Mathematica for symbolic and numerical computations in most of my Physics projects. If you are interested in looking at or reusing the code from any of my publications, let me know by writing to fidel.s (at) gmail (dot)..."
+    },{
+      "title": "programming",
+      "url": "/_pages/programming/",
+      "category": "page",
+      "content": ""
+    },{
+      "title": "publications",
+      "url": "/publications/",
+      "category": "page",
+      "content": "This is a list of my preprints and publications in reverse-chronological order. You can use the buttons below to filter according to the various broad areas in which I have worked on. all&ensp; hep-th&ensp; physics.bio-ph&ensp; cond-mat.stat-mech 2022 2022hep-th On the..."
+    },{
+      "title": "spicy cherry and capers sauce",
+      "url": "/cooking/pasta/spicy-cherry-and-capers-sauce",
+      "category": "recipe",
+      "content": "This sauce is super easy to make and simply explodes with flavor in your mouth. I usually pair it with _ravioli_ or _tortelleti_ to create a quick and filling lunch. Any kind of chilli oil will work, but [Lao Gan..."
+    },{
+      "title": "sweet corn pie",
+      "url": "/cooking/pie-fillings/sweet-corn-pie",
+      "category": "recipe",
+      "content": "This is a simple pie, perfect for a quick weekday lunch. - **Prep:** 30 min. - **Cooking:** 20 min. - **Makes:** 1 pie (6 to 8 portions) ### Ingredients - [1 basic savory pie crust dough](/cooking/pie-crusts/basic-savory-pie-crust-dough) - 3 corn cobs..."
+    },{
+      "title": "teaching",
+      "url": "/teaching/",
+      "category": "page",
+      "content": "I started teaching as a first-year undergraduate student in 2007, at an Euclidean Geometry course at high-school level. During the years that followed and until completing my PhD in 2016, I was a teaching assistant in various courses at _Universidad..."
+    },{
+      "title": "python",
+      "url": "/blog/tag/python/",
+      "category": "page",
+      "content": ""
+    },{
+      "title": "graphs",
+      "url": "/blog/tag/graphs/",
+      "category": "page",
+      "content": ""
+    },{
+      "title": "neural-networks",
+      "url": "/blog/tag/neural-networks/",
+      "category": "page",
+      "content": ""
+    },{
+      "title": "tensorflow-gnn",
+      "url": "/blog/tag/tensorflow-gnn/",
+      "category": "page",
+      "content": ""
+    },{
+      "title": "tensorflow-datasets",
+      "url": "/blog/tag/tensorflow-datasets/",
+      "category": "page",
+      "content": ""
+    },{
+      "title": "programming",
+      "url": "/blog/category/programming/",
+      "category": "page",
+      "content": ""
+    },{
+      "title": "blog",
+      "url": "/blog/index.html",
+      "category": "page",
+      "content": "{{ site.blog_name }} {{ site.blog_description }} {% for post in paginator.posts %} {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %} {% assign year = post.date | date: \"%Y\" %} {% assign tags = post.tags..."
+    },{
+    "title": "Introduction to TensorFlow GNN",
+    "url": "/blog/2022/tfgnn-intro/",
     "category": "blog",
-    "content": {{ post.content | strip_html | normalize_whitespace | truncatewords: 40 | jsonify }}
-  }
-  {%- assign first = true -%}
-{%- endfor -%}
-]
+    "content": "For my first post in this blog, I’ve decided to write a beginner-level introduction to Graph Neural Networks with TensorFlow-GNN. An interactive version of this post, where you can run and modify the code, is available as a Kaggle notebook..."
+  }]
